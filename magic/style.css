@@ -20,12 +20,14 @@
 }
 
 .logo{
-margin-left: 32%; height: auto;
+margin-left: 32%; 
+height: auto;
                      background-repeat:no-repeat;
                     background-size: cover;	
 					
-					position: absolute;margin-top:40px}
-.imageCycle1 {
+					position: absolute;margin-top:40px;
+}
+.magic {
 
 	 max-width: 100%;
                     height: auto;
