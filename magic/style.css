@@ -18,13 +18,48 @@
   
 					
 }
-.magic {
+
+.logo{
+margin-left: 32%; height: auto;
+                     background-repeat:no-repeat;
+                    background-size: cover;	
+					
+					position: absolute;margin-top:40px}
+.imageCycle1 {
 
 	 max-width: 100%;
                     height: auto;
-                     background-repeat:no-repeat;
-                    background-size: cover;
+                   
+                   
 					background-color:#330134;
+					
+
+ background-size:80% 80vh;
+ 
+         background-size: cover;
+		 background:url(magic.jpg) no-repeat center center fixed;
+					
+					-webkit-background-size: cover;
+        -moz-background-size:cover;
+        -o-background-size: cover;  
+}
+.imageCycle2 {
+
+	 max-width: 100%;
+                    height: auto;
+              background:url(2.jpg) no-repeat center center fixed;
+                    position:absolute;
+					background-color:#330134;
+					
+
+ background-size:80% 80vh;
+ 
+         background-size: cover;
+		
+					
+					-webkit-background-size: cover;
+        -moz-background-size:cover;
+        -o-background-size: cover;  
 }
 
 
