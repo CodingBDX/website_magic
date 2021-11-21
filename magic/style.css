@@ -1,6 +1,6 @@
 .carte {
-  max-width: 1500px;
-  height: 2100px; 
+  max-width: auto;
+  height: 800px; 
 }
 .wave{
  max-width: 100%;
