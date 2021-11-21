@@ -18,7 +18,7 @@ height: auto;
           margin-top:40px;
 }
 #bode{
-  position: fixed;
+ 
   max-width: 100%;
   height: auto;
 background-color:#330134;
@@ -29,18 +29,18 @@ background-size: cover;
 background-attachment: scroll;
 }
 .imageCycle1 {
-		 background:url(https://mtg-proxy.netlify.app/magic.jpg) no-repeat center center local ;			
+		 background:url(https://mtg-proxy.netlify.app/magic.jpg) no-repeat center center fixed ;			
 }
 .imageCycle2 {
 
 	 
-              background:url(https://mtg-proxy.netlify.app/2.jpg) no-repeat center center local;
+              background:url(https://mtg-proxy.netlify.app/2.jpg) no-repeat center center fixed;
 }
 .imageCycle4 {
-  background:url(https://mtg-proxy.netlify.app/4.jpg) no-repeat  center center local;			
+  background:url(https://mtg-proxy.netlify.app/4.jpg) no-repeat  center center fixed;			
 }
 .imageCycle3 {
-  background:url(https://mtg-proxy.netlify.app/3.jpg) no-repeat  center center local;			
+  background:url(https://mtg-proxy.netlify.app/3.jpg) no-repeat  center center fixed;			
 }      
 
 
