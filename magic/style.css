@@ -39,7 +39,7 @@ height: auto;
  background-size:80% 80vh;
  
          background-size: cover;
-		 background:url(https://mtg-proxy.netlify.app/magic.jpg) no-repeat center;
+		 background:url(https://mtg-proxy.netlify.app/magic.jpg) no-repeat fixed;
 					
 					-webkit-background-size: cover;
         -moz-background-size:cover;
