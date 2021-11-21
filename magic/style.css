@@ -16,42 +16,30 @@ height: auto;
 					
 					position: absolute;margin-top:40px;
 }
+#bode{
+  max-width: 100%;
+  height: auto;
+background-color:#330134;
+-webkit-background-size: cover;
+-moz-background-size:cover;
+-o-background-size: cover;  
+background-size: cover;
+
+}
 .imageCycle1 {
-
-	 max-width: 100%;
-                    height: auto;
-                   
-                   
-					background-color:#330134;
-					
-
- 
- 
-         background-size: cover;
-		 background:url(https://mtg-proxy.netlify.app/magic.jpg) no-repeat center center ;
-					
-					-webkit-background-size: cover;
-        -moz-background-size:cover;
-        -o-background-size: cover;  
+		 background:url(https://mtg-proxy.netlify.app/magic.jpg) no-repeat  ;			
 }
 .imageCycle2 {
 
-	 max-width: 100%;
-                    height: auto;
-              background:url(https://mtg-proxy.netlify.app/2.jpg) no-repeat center center;
-                    
-					background-color:#330134;
-					
-
- 
- 
-         background-size: cover;
-		
-					
-					-webkit-background-size: cover;
-        -moz-background-size:cover;
-        -o-background-size: cover;  
+	 
+              background:url(https://mtg-proxy.netlify.app/2.jpg) no-repeat;
 }
+.imageCycle4 {
+  background:url(https://mtg-proxy.netlify.app/4.jpg) no-repeat  ;			
+}
+.imageCycle3 {
+  background:url(https://mtg-proxy.netlify.app/3.jpg) no-repeat  ;			
+}      
 
 
 .modal {
