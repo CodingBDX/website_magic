@@ -1,4 +1,7 @@
-
+.carte {
+  max-width: 100%;
+  height: auto; 
+}
 .wave{
  max-width: 100%;
                     height: auto;
