@@ -1,9 +1,9 @@
 .carte {
-  height: 25vh;
-    width: auto; 
-    max-width: 1500px; 
-    max-height: 2100px;
-    object-fit: cover;
+  display: block;
+  max-width:auto;
+  max-height:495px;
+  width: auto;
+  height: auto;
 }
 .wave{
  max-width: 100%;
