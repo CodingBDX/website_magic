@@ -94,12 +94,12 @@ function getCardSize(sizeClass) {
   return {
     width: 63,
     height: 88,
-    name: "Std Card USA Game",
+    name: "Card Magic classic",
   };
 }
 
 const buildPdfName = (deckSize, cardName) =>
-  `InkfathomProxy-${deckSize}_${cardName.replace(" ", "_")}.pdf`;
+  `Magic-Proxy-${deckSize}_${cardName.replace(" ", "_")}.pdf`;
 
 function getFilenameFromUrl(url) {
   const pathname = new URL(url).pathname;
