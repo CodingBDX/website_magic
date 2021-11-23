@@ -37,6 +37,7 @@ height: auto;
 					
 					position: absolute;
           margin-top:40px;
+          z-index:120;
 }
 #bode{
  
