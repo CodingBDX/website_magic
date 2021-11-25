@@ -5,6 +5,17 @@
   margin: 4px 0px;
 }
 
+.hero-area-l11 .content h1 {
+  font-family: 'Gothic A1', sans-serif;
+  color: #1F1F1F;
+  font-size: 34px;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: -3px;
+  line-height: 40px;
+  margin-bottom: 38px;
+}
+
 .image1 {
   max-width: 100%;
   height: auto;
