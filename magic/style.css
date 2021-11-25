@@ -1,11 +1,12 @@
 
 
 .image1 {
-  background-position: center;
+  max-width: 100%;
+  height: auto;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 0;
   position: absolute;
+  z-index: 80;
   
 }
 .icon-site {
