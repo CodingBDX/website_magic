@@ -15,6 +15,37 @@
   line-height: 40px;
   margin-bottom: 38px;
 }
+.hero-area-l11 .content p {
+  font-family: Karla;
+  color: #222F3F;
+  font-size: 21px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.4px;
+  line-height: 36px;
+}
+img.horizontal-move {
+  -webkit-animation: route 2s infinite  alternate;
+          animation: route 2s infinite  alternate;
+}
+
+@-webkit-keyframes route {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes route {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
 
 .image1 {
   max-width: 100%;
