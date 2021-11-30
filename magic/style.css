@@ -110,12 +110,7 @@ img.horizontal-move {
 
 
 .logo{
-margin-left: 32%; 
-height: auto;
-                     background-repeat:no-repeat;
-                    background-size: cover;	
-					
-					position: absolute;
+
           margin-top:40px;
           z-index:131;
 }
