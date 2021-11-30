@@ -63,7 +63,7 @@ if (navigator.mediaDevices.getUserMedia) {
                                 cardResults.cards.forEach(function(card){
                                     console.log(card);
                                     $("#possibleCards span:last").after('<span><a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=' 
-                                        + card.multiverseid + '" target="_blank"><img src="' + card.imageUrl +'"/></a>" + card.name + "</span>'
+                                        + card.multiverseid + '" target="_blank"><img src="' + card.imageUrl +'"/>' + card.name + '</a></span>'
                                         );
                                     if(card.rulings.length !=0){
                                         card.rulings.forEach(function(rule){
