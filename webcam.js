@@ -62,7 +62,7 @@ if (navigator.mediaDevices.getUserMedia) {
                             if(cardResults.cards.length != 0){
                                 cardResults.cards.forEach(function(card){
                                     console.log(card);
-                                    $("#cardName").text(cardName);
+                                    $("#possibleCards").text(cardName);
                                     if(card.rulings.length !=0){
                                         card.rulings.forEach(function(rule){
                                             $("a:last").after("<p>" + rule.date +" | "+ rule.text + "</p>");
