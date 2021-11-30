@@ -118,6 +118,7 @@ img.horizontal-move {
 .ascii-art {
   font-family: monospace;
   white-space: pre;
+  font-size:25px;
 }
 #bode{
  
