@@ -1,7 +1,6 @@
 #videoElement {
-	width: auto;
-	height: auto;
-	max-height: 280px;
+	width: 640px;
+	height: 480px;
 	background-color: #666;
 }
 .hide{display:none!important}
