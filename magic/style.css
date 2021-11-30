@@ -115,6 +115,10 @@ img.horizontal-move {
           z-index:131;
           color:#fff;
 }
+.ascii-art {
+  font-family: monospace;
+  white-space: pre;
+}
 #bode{
  
   max-width: 100%;
