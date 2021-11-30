@@ -1,4 +1,4 @@
-  <script>
+  
         var self = this;
 
      
@@ -82,4 +82,4 @@ if (navigator.mediaDevices.getUserMedia) {
                 })
             }
         }
-    </script>
+   
