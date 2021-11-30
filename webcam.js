@@ -62,7 +62,7 @@ if (navigator.mediaDevices.getUserMedia) {
                             if(cardResults.cards.length != 0){
                                 cardResults.cards.forEach(function(card){
                                     console.log(card);
-                                    $("#possibleCards span:last").after('<span><p>' + card.name + '</p></span>'
+                                    $("#possibleCards span:last").after('<span><p>' + card.name + '</p></span>')
                                     $("#possibleCards2 span:last").after('<span><a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=' 
                                     + card.multiverseid + '" target="_blank"><img src="' + card.imageUrl +'"/></a></span>'
                                         );
