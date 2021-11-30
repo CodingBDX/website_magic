@@ -29,8 +29,8 @@
 	background: linear-gradient(to right, #ff416c, #ff4b2b);
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 800px;
-	min-width: 1024px;
+	min-height: 50%;
+	
 	  
 	/* Set up proportionate scaling */
 	width: 100%;
