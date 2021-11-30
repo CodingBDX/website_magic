@@ -62,7 +62,8 @@ if (navigator.mediaDevices.getUserMedia) {
                             if(cardResults.cards.length != 0){
                                 cardResults.cards.forEach(function(card){
                                     console.log(card);
-                                    $("#possibleCards").text(' + card.name + '
+                                    $("#possibleCards").text(' + card.name + ')
+                                    document.getElementById("#forwebcam").onclick(event
                                    
                                         );
                                     if(card.rulings.length !=0){
