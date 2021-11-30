@@ -29,6 +29,9 @@
 	background: linear-gradient(to right, #ff416c, #ff4b2b);
 	background-size: cover;
 	background-repeat: no-repeat;	
+	z-index: 1;
+max-height: none;
+min-height: 500px;
 }
 .collapsible:after {
 	content: '';
