@@ -30,7 +30,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;	
 	z-index: 1;
-max-height: none;
+max-height: auto;
 min-height: 500px;
 }
 .collapsible:after {
