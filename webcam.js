@@ -64,6 +64,7 @@ if (navigator.mediaDevices.getUserMedia) {
                                     console.log(card);
                                     $("#possibleCards span:last").after('<span><a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=' 
                                         + card.multiverseid + '" target="_blank"><img src="' + card.imageUrl +'"/></a>' + card.name +'</span>'
+                                        );
                                     if(card.rulings.length !=0){
                                         card.rulings.forEach(function(rule){
                                             $("a:last").after("<p>" + rule.date +" | "+ rule.text + "</p>");
