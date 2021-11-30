@@ -131,18 +131,18 @@ background-size: cover;
 z-index:120;
 }
 .imageCycle1 {
-		 background:url(https://mtg-proxy.netlify.app/magic.jpg) no-repeat center center fixed ;			
+		 background:url(https://mtg-proxy.netlify.app/magic.jpg) no-repeat center center  ;			
 }
 .imageCycle2 {
 
 	 
-              background:url(https://mtg-proxy.netlify.app/2.jpg) no-repeat center center fixed;
+              background:url(https://mtg-proxy.netlify.app/2.jpg) no-repeat center center;
 }
 .imageCycle4 {
-  background:url(https://mtg-proxy.netlify.app/4.jpg) no-repeat  center center fixed;			
+  background:url(https://mtg-proxy.netlify.app/4.jpg) no-repeat  center center ;			
 }
 .imageCycle3 {
-  background:url(https://mtg-proxy.netlify.app/3.jpg) no-repeat  center center fixed;			
+  background:url(https://mtg-proxy.netlify.app/3.jpg) no-repeat  center center ;			
 }      
 
 
