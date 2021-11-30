@@ -1,3 +1,8 @@
+#videoElement {
+	width: auto;
+	height: 280px;
+	background-color: #666;
+}
 
 .checkbox-container input:checked ~ .checkmark:after {
 	display: block;
