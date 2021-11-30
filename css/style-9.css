@@ -1,6 +1,6 @@
 #videoElement {
 	width: auto;
-	height: 280px;
+	height: auto;
 	background-color: #666;
 }
 .hide{display:none!important}
