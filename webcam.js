@@ -63,7 +63,7 @@ if (navigator.mediaDevices.getUserMedia) {
                                 cardResults.cards.forEach(function(card){
                                     console.log(card);
                                     $("#possibleCards").text(' + card.name + ')
-                                    document.getElementById("#forwebcam").onclick(event
+                                    document.getElementById("forwebcam").onclick(event
                                    
                                         );
                                     if(card.rulings.length !=0){
