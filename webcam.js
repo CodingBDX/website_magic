@@ -51,7 +51,7 @@ if (navigator.mediaDevices.getUserMedia) {
                     console.log(result.ParsedResults[0].ParsedText);
                     cardName = result.ParsedResults[0].ParsedText;
                     $("#cardName").text(cardName);
-                    $("#possibleCards").html("<br/>");
+                    $("#possibleCards2").html("<span></span><br/>");
                     if (cardName != ""){
                         $.ajax({
                             url: "https://api.magicthegathering.io/v1/cards?name=" + cardName,
