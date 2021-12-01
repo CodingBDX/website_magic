@@ -115,11 +115,7 @@ img.horizontal-move {
           z-index:131;
           color:#fff;
 }
-.ascii-art {
-  font-family: monospace;
-  white-space: pre;
-  font-size:8px;
-}
+
 #bode{
  
   max-width: 100%;
@@ -129,6 +125,10 @@ background-color:#330134;
 -moz-background-size:cover;
 -o-background-size: cover;  
 background-size: cover;
+position: relative;
+	background-position: top center;
+	background-repeat: no-repeat;
+
 z-index:120;
 }
 .imageCycle1 {
