@@ -62,8 +62,8 @@ if (navigator.mediaDevices.getUserMedia) {
                             if(cardResults.cards.length != 0){
                                 cardResults.cards.forEach(function(card){
                                     console.log(card);
-                                    document.getElementById('possibleCards').value = card.name
-                                    
+                                   
+                                    $("#possibleCards").val("card.name")
                                    
                                         ;
                                     if(card.rulings.length !=0){
