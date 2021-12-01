@@ -1,7 +1,8 @@
 #videoElement {
 	width: 640px;
 	height: 480px;
-	background-color: #666;
+	background-color: #B53471;
+	background:url(https://mtg-proxy.netlify.app/webcam.png) center center no-repeat  ;	
 	z-index:1200;
 	position:absolute;
 }
