@@ -51,7 +51,7 @@ if (navigator.mediaDevices.getUserMedia) {
                     console.log(result.ParsedResults[0].ParsedText);
                     cardName = result.ParsedResults[0].ParsedText;
                     $("#cardName").text(cardName);
-                    $("#possibleCards2").html("<span></span><br/>");
+                    $("#possibleCards").html("<span></span><br/>");
                     if (cardName != ""){
                         $.ajax({
                             url: "https://api.magicthegathering.io/v1/cards?name=" + cardName,
@@ -62,7 +62,7 @@ if (navigator.mediaDevices.getUserMedia) {
                             if(cardResults.cards.length != 0){
                                 cardResults.cards.forEach(function(card){
                                     console.log(card);
-                                    $("#possibleCards2 span:last").after('<span><a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=' 
+                                    $("#possibleCards span:last").after('<span><a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=' 
                                     + card.multiverseid + '" target="_blank"><img src="' + card.imageUrl +'"/></a></span>');
                                    
                                     
