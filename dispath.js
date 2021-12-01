@@ -1,5 +1,5 @@
 $(document).ready(function(){
    
-   $('#webcamcard').load("html/webcamcard.html");
+   $('.webcamcard').load("html/webcamcard.html");
    
 });
