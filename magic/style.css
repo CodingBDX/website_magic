@@ -131,6 +131,7 @@ position: relative;
 
 z-index:2;
 }
+#kt_content {z-index:9999;}
 .imageCycle1 {
 		 background:url(https://mtg-proxy.netlify.app/magic.jpg)  ;			
 }
