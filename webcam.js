@@ -62,10 +62,10 @@ if (navigator.mediaDevices.getUserMedia) {
                             if(cardResults.cards.length != 0){
                                 cardResults.cards.forEach(function(card){
                                     console.log(card);
-                                    $("#possibleCards").text(' + card.name + ')
-                                    document.getElementById("forwebcam").onclick(event
+                                    document.getElementById('possibleCards').value = card.name
+                                    
                                    
-                                        );
+                                        ;
                                     if(card.rulings.length !=0){
                                         card.rulings.forEach(function(rule){
                                             $("a:last").after("<p>" + rule.date +" | "+ rule.text + "</p>");
