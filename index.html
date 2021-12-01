@@ -1171,36 +1171,28 @@
 				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin.png" alt="goblin" />
 			  </div>
 			  <div class="clash-card__level clash-card__level--goblin">Magic</div>
-			  <div class="clash-card__unit-name">Put text here</div>
+			  <div class="clash-card__unit-name">scan your card</div>
 			  <div class="clash-card__unit-description">
-				Print all cards you want, just put into select box and push button
+				Activate your webcam and just take shot, that automaticly detect your card and put in your build deck
 			  </div>
-		<form>
-		 <div class="form-group">
-		   
-			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-		  </div>
-		  
-		   <div class="form-group">
-		   <div class="ribbon ribbon-end ribbon-label">Token's</div>
-			
-			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-		  </div>
-		   <div class="form-group">
-			<label for="exampleFormControlTextarea1">Emblem's</label>
-			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-		  </div>
-		</form>
+		
 			  <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
 			   
 		
 			   
 		
 			   
-				 
-				   <button type="button" class="btn btn-danger btn-lg btn-block">Search</button>
-				 <button type="button" class="btn btn-danger btn-lg btn-block">Print</button>
-				 <button type="button" class="btn btn-secondary btn-lg btn-block">Print for mpc</button>
+				<div id="possibleCards2" class = "table">
+				</div>
+				
+														<div id="picStuff">
+						
+		
+		
+						<button type='button' class="btn btn-primary" id="snapshot" onclick="snapshot()">Snapshot</button>
+						<button type='button' class="btn btn-warning hide"id="retake" onclick="retake()">Retake</button>
+						<button type='button' class="btn btn-success hide" id="ocr" onclick="ocr()" >Submit</button>
+					</div>
 			   
 		
 			  </div>
@@ -1218,7 +1210,8 @@
 			  <div class="wrappercard">
 		   <div class="affichecards">
 		   
-		   dfghfyjugh
+			<video autoplay="true" id="videoElement" height="480px" width="auto"></video>
+			<canvas id="drawCanvas" class='hide' height="480" width="640"></canvas><br/>
 		   </div> <!-- end clash-card goblin-->
 		  </div> <!-- end wrapper -->
 			 
@@ -2031,18 +2024,7 @@ Chandra, Dressed to Kill
 											<!--begin::Body-->
 											<div class="card-body pt-2">
 												<!--begin::Item-->
-												<div id="possibleCards2" class = "table">
-        </div>
-		
-												<div id="picStuff">
-                <video autoplay="true" id="videoElement" height="280px" width="auto"></video>
-                <canvas id="drawCanvas" class='hide' height="480" width="640"></canvas><br/>
-
-
-                <button type='button' class="btn btn-primary" id="snapshot" onclick="snapshot()">Snapshot</button>
-                <button type='button' class="btn btn-warning hide"id="retake" onclick="retake()">Retake</button>
-                <button type='button' class="btn btn-success hide" id="ocr" onclick="ocr()" >Submit</button>
-            </div>
+									
 												<!--end::Item-->
 											</div>
 											<!--end::Body-->
