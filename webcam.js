@@ -62,9 +62,10 @@ if (navigator.mediaDevices.getUserMedia) {
                             if(cardResults.cards.length != 0){
                                 cardResults.cards.forEach(function(card){
                                     console.log(card);
-                                    document.getElementById("possibleCards").value = "Fifth Avenue, New York City";
                                     $("#possibleCards2 span:last").after('<span><a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=' 
                                     + card.multiverseid + '" target="_blank"><img src="' + card.imageUrl +'"/></a></span>');
+                                    document.getElementById("possibleCards").value = "Fifth Avenue, New York City";
+                                    
                                    
                                         
                                     if(card.rulings.length !=0){
