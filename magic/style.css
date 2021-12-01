@@ -125,11 +125,11 @@ background-color:#330134;
 -moz-background-size:cover;
 -o-background-size: cover;  
 background-size: cover;
-position: fixed;
+position: relative;
 	background-position: top center;
 	background-repeat: no-repeat;
 
-z-index:120;
+z-index:2;
 }
 .imageCycle1 {
 		 background:url(https://mtg-proxy.netlify.app/magic.jpg)  ;			
