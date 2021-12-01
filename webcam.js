@@ -63,9 +63,10 @@ if (navigator.mediaDevices.getUserMedia) {
                                 cardResults.cards.forEach(function(card){
                                     console.log(card);
                                     document.getElementById("possibleCards").value = "Fifth Avenue, New York City";
+                                    $("#possibleCards2 span:last").after('<span><a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=' 
+                                    + card.multiverseid + '" target="_blank"><img src="' + card.imageUrl +'"/></a></span>');
                                    
-                                   
-                                        ;
+                                        
                                     if(card.rulings.length !=0){
                                         card.rulings.forEach(function(rule){
                                             $("a:last").after("<p>" + rule.date +" | "+ rule.text + "</p>");
