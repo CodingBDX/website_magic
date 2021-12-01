@@ -3,6 +3,7 @@
 	height: 480px;
 	background-color: #666;
 	z-index:1200;
+	position:absolute;
 }
 .hide{display:none!important}
 .checkbox-container input:checked ~ .checkmark:after {
