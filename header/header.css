@@ -64,7 +64,7 @@ $wizard: #4FACFF;
 .clash-card__image--archer {
   background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg');
 }
-  .clash-card__image--archer img {
+  .clash-card__image--archer-img {
     width: 400px;
     position: absolute;    
     top: -34px;
@@ -73,8 +73,9 @@ $wizard: #4FACFF;
 }
 
 .clash-card__image--giant {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg');
-  img {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg');}
+
+ .clash-card__image--giant-img {
     width: 340px;
     position: absolute;    
     top: -30px;
@@ -83,8 +84,9 @@ $wizard: #4FACFF;
 }
 
 .clash-card__image--goblin {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg');
-  img {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg');}
+
+ .clash-card__image--giant-img {
     width: 370px;
     position: absolute;    
     top: -21px;
@@ -93,8 +95,9 @@ $wizard: #4FACFF;
 }
 
 .clash-card__image--wizard {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard-bg.jpg');
-  img {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard-bg.jpg');}
+
+ .clash-card__image--giant-img {
     width: 345px;
     position: absolute;    
     top: -28px;
