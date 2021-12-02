@@ -1,4 +1,6 @@
-body{margin-top:20px;}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 .masthead {
     padding: 3rem 0 7rem;
@@ -16,6 +18,7 @@ body{margin-top:20px;}
 }
 
 .masthead h1 {
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-weight: 700;
     font-size: 2rem;
