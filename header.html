@@ -190,9 +190,14 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script>
-setTimeout(function() {
-  $('.slick-next').trigger('click');
-}, 30);
+
+setInterval(function(){
+   $('.slick-next').trigger("click");
+},random(3000,4000));
+
+function random(min,max){
+   return min + (max - min) * Math.random()
+}
 </script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script type="text/javascript" src="https://mtg-proxy.netlify.app/header/header.js" async></script>
