@@ -52,7 +52,8 @@ $wizard: #4FACFF;
 
 .clash-card__image--barbarian {
   background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');
-  img {
+}
+  .clash-card__image--barbarian-img {
     width: 400px;
     position: absolute;    
     top: -65px;
@@ -62,7 +63,8 @@ $wizard: #4FACFF;
 
 .clash-card__image--archer {
   background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg');
-  img {
+}
+  .clash-card__image--archer img {
     width: 400px;
     position: absolute;    
     top: -34px;
