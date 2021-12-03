@@ -43,10 +43,10 @@ $(document).ready(function(){
   var fileextension = ".png"; 
  
   var i = "1";
-  $(function imageloop(){
-    $(post);
-   $("<img />").attr('src', dir + i + fileextension ).appendTo(".imgcard-responsive");
-  $(postend);
+  $('.slider').each(function imageloop(){
+    
+   $(this).append("<img />").attr('src', dir + i + fileextension ).appendTo(".imgcard-responsive");
+  
    if (i==6){
  
  }
