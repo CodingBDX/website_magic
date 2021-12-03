@@ -41,9 +41,10 @@ window.onload=function(){
 $(document).ready(function(){
   var dir = "gallerycard/"; 
   var fileextension = ".png"; 
+  var post = '<div class="slide"></div>';
   var i = "1";
-  $('.slide').each(function imageloop(){
-    
+  $(function imageloop(){
+    $(post);
    $("<img />").attr('src', dir + i + fileextension ).appendTo(".imgcard-responsive");
   
    if (i==6){
