@@ -6,14 +6,7 @@
   padding:20px;
   color:white;
   .parent-slide{padding:15px;}
-  img{display: block;margin:auto;}
-}
-.slide img {
-  margin-left: 20px;
-  height:450px;
-  width: 280px;
-}
-.imgcard-responsive {
-height: 300px;
-width:170px;
+  img{display: block;margin:auto;
+  width:280px;
+height:450px}
 }
