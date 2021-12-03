@@ -10,25 +10,10 @@
 
 <div class="gallerycard">
   <div class="slide">
-    <img src="gallerycard/goblin.png" alt="" class="imgcard-responsive" />
-    f
+    <img src="" alt="" class="imgcard-responsive" />
+    
   </div>
-  <div class="slide">
-    <img src="https://github.com/bibiyanki2/website_magic/blob/master/gallerycard/2.jpg" alt="" class="imgcard-responsive" />
-    g
-  </div>
-  <div class="slide">
-    <img src="https://github.com/bibiyanki2/website_magic/blob/master/gallerycard/3.jpg" alt="" class="imgcard-responsive" />
-  g
-  </div>
-  <div class="slide">
-    <img src="https://github.com/bibiyanki2/website_magic/blob/master/gallerycard/4.jpg" alt="" class="imgcard-responsive" />
-   g
-  </div>
-  <div class="slide">
-    <img src="https://github.com/bibiyanki2/website_magic/blob/master/gallerycard/5.jpg" alt="" class="imgcard-responsive" />
-  er
-  </div>
+  
 </div>
 
 			</div>
@@ -52,3 +37,20 @@ window.onload=function(){
   });
 };
 </script>
+<script>
+$(document).ready(function(){
+  var dir = "gallerycard/"; 
+  var fileextension = ".png"; 
+  var i = "1";
+  $(function imageloop(){
+   $("<img />").attr('src', dir + i + fileextension ).appendTo(".imgcard-responsive");
+   if (i==13){
+   alert('loaded');
+   }
+   else{
+   i++;
+   imageloop();
+   };
+         });   
+  });
+  </script>
