@@ -8,3 +8,8 @@
   .parent-slide{padding:15px;}
   img{display: block;margin:auto;}
 }
+
+.imgcard-responsive {
+height: 300px;
+width:170px;
+}
