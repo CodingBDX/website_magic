@@ -16,19 +16,10 @@
 		<link rel="canonical" href="https://mtg-proxy.netlify.app/#tutoriaux" />
 		<link rel="shortcut icon" href="magic.ico" />
 		<!--begin::Fonts-->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
-		<!--end::Fonts-->
-		<!--begin::Page Vendor Stylesheets(used by this page)-->
-		
-		<!--end::Page Vendor Stylesheets-->
-		<!--begin::Global Stylesheets Bundle(used by all pages)-->
-		<link href="css/plugins.bundle.css" rel="stylesheet" type="text/css" />
-	<link href="magic/style.css" rel="stylesheet" type="text/css" />
-		<link href="style.bundle.css" rel="stylesheet" type="text/css" />
-<link href="css/style-9.css" rel="stylesheet" type="text/css" />
-<link href="mana.css" rel="stylesheet" type="text/css" />
-<link href="html/webcamcard.css" rel="stylesheet" type="text/css" />
-		<!--end::Global Stylesheets Bundle-->
+		<link href="https://mtg-proxy.netlify.app/header.css" rel="stylesheet" type="text/css" />
+		<link href="https://mtg-proxy.netlify.app/header/header.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="header/slick-theme.css"/>
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->
@@ -62,15 +53,15 @@
 							
 													</section>
 						<section id="fbsection1">
-<div class="webcamcard"></div>
+
 
 						</section>
 						<section id="fbsection2">
-							<div class="printcard"></div>
+							
 
 						</section>
 						<section id="fbsection3">
-							<div class="buiildcard"></div>
+							
 							
 								
 						
@@ -93,10 +84,28 @@
 		
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="js/scripts.bundle.js"></script>
+	
 		<script type="text/javascript" src="dispath.js" async></script>
-		
+		<script type="text/javascript">
+			$(document).ready(function(){
+			  $('.slide-container').slick({
+				  draggable: true,
+				  autoplay: true, /* this is the new line */
+				  autoplaySpeed: 2000,
+				  infinite: true,
+				  slidesToShow: 1,
+				  slidesToScroll: 1,
+				  touchThreshold: 1000,
+			  });
+			});
+		  </script>
+		  
+		  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+			  
+		  <script type="text/javascript" src="https://mtg-proxy.netlify.app/header/header.js" async></script>
+		  
 	</body>
 	<!--end::Body-->
 </html>
