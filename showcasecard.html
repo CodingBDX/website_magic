@@ -42,9 +42,9 @@ $(document).ready(function(){
   var dir = "gallerycard/"; 
   var fileextension = ".png"; 
   var i = "1";
-  $(function imageloop(){
+  $('.slide').each(function imageloop(){
     
-   $('.slide').append("<img />").attr('src', dir + i + fileextension ).appendTo(".imgcard-responsive");
+   $(this).append("<img />").attr('src', dir + i + fileextension ).appendTo(".imgcard-responsive");
   
    if (i==6){
  
