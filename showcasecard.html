@@ -9,8 +9,8 @@
 
 
 <div class="gallerycard">
-  <div class="slide">
-    <img src="" alt="" class="imgcard-responsive" />
+  <div class="slide imgcard-responsive">
+    <img src="" alt="" class="" />
     
   </div>
   
@@ -45,7 +45,7 @@ $(document).ready(function(){
   $(function imageloop(){
    $("<img />").attr('src', dir + i + fileextension ).appendTo(".imgcard-responsive");
    if (i==13){
-   alert('loaded');
+   
    }
    else{
    i++;
