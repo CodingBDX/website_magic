@@ -48,7 +48,7 @@
 
 				
 					<div id="cbp-fbscroller" class="cbp-fbscroller">
-						<section id="fbsection1">
+						<section id="fbsection1">dffg
 							<div class="headerindex"></div>
 							
 													</section>
@@ -86,7 +86,25 @@
 
 	
 		<script type="text/javascript" src=https://mtg-proxy.netlify.app/dispath.js" async></script>
-
+		<script type="text/javascript">
+			$(document).ready(function(){
+			  $('.slide-container').slick({
+				  draggable: true,
+				  autoplay: true, /* this is the new line */
+				  autoplaySpeed: 2000,
+				  infinite: true,
+				  slidesToShow: 1,
+				  slidesToScroll: 1,
+				  touchThreshold: 1000,
+			  });
+			});
+		  </script>
+		  
+		  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+			  
+		  <script type="text/javascript" src="https://mtg-proxy.netlify.app/header/header.js" async></script>
 		  
 	</body>
 	<!--end::Body-->
