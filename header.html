@@ -194,8 +194,10 @@
 
 <script>
 
-$('.slide-container').slick();
 
+$(document).ready(function(){
+  $('.slide-container').slick();
+});
 
 setInterval(function(){
    $('.slick-next').trigger("click");
