@@ -44,7 +44,14 @@ $(document).ready(function(){
   var i = "1";
   $(function imageloop(){
    $("<img />").attr('src', dir + i + fileextension ).appendTo(".imgcard-responsive");
-  
+   if (i==13){
+ 
+ }
+ else{
+ i++;
+ imageloop();
+ };
+       
 
          });   
   });
