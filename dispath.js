@@ -1,6 +1,6 @@
 $(document).ready(function(){
    
-   $('.webcamcard').load("html/webcamcard.html");
+   $('.headerindex').load("header.html");
    $('.buildcard').load("html/buildcard.html");
    $('.printcard').load("html/printcard.html");
 });
