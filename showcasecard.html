@@ -45,7 +45,7 @@ $(document).ready(function(){
   var i = "1";
   $(function imageloop(){
     
-   $('div')($("<img />").attr('src', dir + i + fileextension ).appendTo(".imgcard-responsive"));
+   $("<div class='slide'>").append($("<img />").attr('src', dir + i + fileextension ).appendTo(".imgcard-responsive")("</div>"));
   
    if (i==6){
  
