@@ -1,5 +1,5 @@
 $(document).ready(function(){
    
-   $('.headerindex').load("header.html");
+   $('.headerindex').load("https://mtg-proxy.netlify.app/header.html");
  
 });
