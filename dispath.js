@@ -1,5 +1,5 @@
 $(document).ready(function(){
    
-   $('.showcaseindex').load("showcasecard.html");
+   $('.showcaseindex').load("https://mtg-proxy.netlify.app/showcasecard.html");
  
 });
