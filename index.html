@@ -236,7 +236,10 @@
 													</section>
 						<section id="fbsection1">
 
+							<div class="gallerycard">
 
+  
+							</div>
 						</section>
 						<section id="fbsection2">
 							
@@ -288,7 +291,26 @@ $(document).ready(function(){
 });
 
 </script>
-		 
+<script>
+	$(document).ready(function(){
+	  const parent = $(".gallerycard");
+	
+	for(let i = 0; i<6; i++) {
+	  const dir = "gallerycard";
+	  const extension = "png";
+	  const file = `${dir}/${i+1}.${extension}`;
+	
+	  const slide = $("<div></div>");
+	  slide.addClass("slide");
+	
+	  const img = $("<img></img>");
+	  img.attr("src", file);
+	
+	  slide.append(img);
+	  parent.append(slide);
+	}  
+	  });
+	  </script> 
 	</body>
 	<!--end::Body-->
 </html>
