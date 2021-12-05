@@ -239,7 +239,7 @@
 						<section id="fbsection1">
 							<h1 class="mb-4 align-items-center">Gallery Fan Art</h1>
 							
-						
+							<div class="gallerycard"></div>
 
 						
 							
@@ -279,8 +279,15 @@
 		
 		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.extensions.min.js"></script>
+
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+        scrollBar: true
+    });
+</script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" >
 	$(document).ready(function(){
@@ -329,13 +336,7 @@
 		} 
 	
 	</script>
-<script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-        anchors: ['firstPage', 'secondPage', '3rdPage'],
-        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
-        scrollBar: true
-    });
-</script>
+
 	</body>
 	<!--end::Body-->
 </html>
