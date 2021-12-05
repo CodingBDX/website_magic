@@ -8,7 +8,12 @@
   --mewtwofront: url(https://c1.scryfall.com/file/scryfall-cards/large/front/0/d/0d021207-76be-4bc9-bb71-df991a04d8d8.jpg?1636117729);
 }
 
+#presentation {
+  background-size: cover;
+  background-attachment: fixed;
 
+  background-image: url(presentation.jpg);
+}
 
 .card {
 
