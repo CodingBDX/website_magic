@@ -320,7 +320,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
-<script type="text/javascript" src="triggeronview.js"></script>
+<script type="text/javascript" src="https://mtg-proxy.netlify.app/triggeronview.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" >
 	$(document).ready(function(){
@@ -364,17 +364,7 @@
         }
     });
 
-	$('#elementmove').triggerOnView([
-  {
-    element: $('#move1'),
-    default: {left: -100, opacity: 0},
-    in: {left: 0, opacity: 1}
-  },
-  {
-    element: $('#move2'),
-    default: {left: 100, opacity: 0},
-    in: {left: 0, opacity: 1}
-  }
+
 ]);
 
 	const parent = $(".gallerycard");
