@@ -307,13 +307,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
-<script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-        anchors: ['Presentation', 'gallery_art_magic_the_gathering', 'take_picture_magic_the_gathering'],
-        sectionsColor: ['#dd3d31', '#fff'],
-        scrollBar: true
-    });
-</script>
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" >
 	$(document).ready(function(){
@@ -347,7 +341,11 @@
 
 	});
 
-	
+	var myFullpage = new fullpage('#fullpage', {
+        anchors: ['Presentation', 'gallery_art_magic_the_gathering', 'take_picture_magic_the_gathering'],
+        sectionsColor: ['#dd3d31', '#fff'],
+        scrollBar: true,
+    });
 
 	
 	const parent = $(".gallerycard");
