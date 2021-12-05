@@ -303,15 +303,19 @@
 	  autoplaySpeed: 2000,
 	});
 
-	var myFullpage = new fullpage('#fullpage', {
-      verticalCentered: true,
-      anchors: ['anchor1', 'anchor2', 'anchor3'],
-      menu: '#menu',
-      sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE']
-  });
+	
+	$('#fullpage').fullpage({
+		//options here
+		autoScrolling:true,
+		scrollHorizontally: true
+	});
+
+	//methods
+	$.fn.fullpage.setAllowScrolling(false);
+
 
 	
-	$.fn.fullpage.setAllowScrolling(false);
+	
 
 	});
 
