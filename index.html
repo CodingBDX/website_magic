@@ -251,9 +251,9 @@
 
 
 							<div class="container">
-								<div class="row align-items-center">
-									<div class="col-lg-7 py-5">
-										<div class="wrappercard card mewtwo animated">
+								<div id="elementmove" class="row align-items-center">
+									<div id="move1" class="col-lg-7 py-5">
+										<div  class="wrappercard card mewtwo animated">
 		  
 											
 										<video autoplay="true" id="videoElement" height="480px" width="auto"></video>
@@ -262,7 +262,7 @@
 									  </div> <!-- end wrapper -->
 
 									</div>
-									<div class="col-lg-5">
+									<div id="move2" class="col-lg-5">
 										<div class="py-5 px-4 masthead-cards">
 											
 										
@@ -320,7 +320,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
-
+<script type="text/javascript" src="triggeronview.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" >
 	$(document).ready(function(){
@@ -364,7 +364,19 @@
         }
     });
 
-	
+	$('#elementmove').triggerOnView([
+  {
+    element: $('#move1'),
+    default: {left: -100, opacity: 0},
+    in: {left: 0, opacity: 1}
+  },
+  {
+    element: $('#move2'),
+    default: {left: 100, opacity: 0},
+    in: {left: 0, opacity: 1}
+  }
+]);
+
 	const parent = $(".gallerycard");
 		
 		for(let i = 0; i<6; i++) {
