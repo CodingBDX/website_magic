@@ -385,7 +385,24 @@ adaptiveHeight: true,
       } 
 
 
-   
+      $(function(){
+           
+
+           $('#elementmove').triggerOnView([
+               {
+                   element: $('#move1'),
+                   default: {left: -400, opacity: 0},
+                   in: {left: 0, opacity: 1}
+               },
+               {
+                   element: $('#move2'),
+                   default: {left: 400, opacity: 0},
+                   in: {left: 0, opacity: 1}
+               }
+           ]);
+
+        
+       });
   
 
 
