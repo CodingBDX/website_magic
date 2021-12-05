@@ -1,5 +1,5 @@
 $(document).ready(function(){
    
-   $('.showcaseindex').load("https://mtg-proxy.netlify.app/showcasecard.html");
+   $('.dispath1').load("https://mtg-proxy.netlify.app/html/webcamcard.html");
  
 });
