@@ -1,3 +1,10 @@
+#presentation_magic {
+  background-size: cover;
+  background-attachment: fixed;
+
+  background-image: url(https://mtg-proxy.netlify.app/presentation.jpg);
+}
+
 .masthead {
     padding: 3rem 0 7rem;
     position: relative;
