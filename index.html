@@ -21,6 +21,7 @@
 		<link href="header.css" rel="stylesheet" type="text/css" />
 		<link href="showcasecard.css" rel="stylesheet" type="text/css" />
 		<link href="header/slick-theme.css" rel="stylesheet" type="text/css" />
+		<link href="header/webcamcard.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css"/>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -252,6 +253,15 @@
 								<div class="py-5 px-4 masthead-cards">
 							<div id="possibleCards" class = "table">
 							</div>
+
+							<div class="wrappercard">
+		  
+								<h1 class="display-1 text-white text-center">Take pictures!</h1>
+							<video autoplay="true" id="videoElement" height="480px" width="auto"></video>
+							<canvas id="drawCanvas" class='hide' height="480" width="640"></canvas><br/>
+						  
+						  </div> <!-- end wrapper -->
+
 							</div></div>
 							
 							<div class="container">
