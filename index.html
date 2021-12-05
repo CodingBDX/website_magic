@@ -306,12 +306,14 @@
 	
 	$('#fullpage').fullpage({
 		//options here
-		autoScrolling:true,
-		scrollHorizontally: true
+		scrollBar: true,
+		responsiveHeight: 600,
+        afterResponsive: function(isResponsive){
+
+        }
 	});
 
-	//methods
-	$.fn.fullpage.setAllowScrolling(false);
+
 
 
 	
