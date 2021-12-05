@@ -89,7 +89,7 @@ $wizard: #4FACFF;
 }
 
 .clash-card__image--barbarian {
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');
+  background: url('https://mtg-proxy.netlify.app/noir.png');
 }
   .clash-card__image--barbarian-img {
     width: 400px;
