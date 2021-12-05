@@ -1,27 +1,4 @@
-$(function(){
-    $('#elementmove2').triggerOnView([
-              {
-                  element: $('#move3'),
-                  default: {left: -300, opacity: 0},
-                  in: {left: 0, opacity: 1}
-              }
-          ]);
 
-       $('#elementmove').triggerOnView([
-           {
-               element: $('#move1'),
-               default: {left: -100, opacity: 0},
-               in: {left: 0, opacity: 1}
-           },
-           {
-               element: $('#move2'),
-               default: {left: 100, opacity: 0},
-               in: {left: 0, opacity: 1}
-           }
-       ]);
-
-    
-   });
 
 
 $(document).ready(function(){
