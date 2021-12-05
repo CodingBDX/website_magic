@@ -53,7 +53,7 @@
 
 				
 					<div id="cbp-fbscroller" class="cbp-fbscroller">
-						<section id="fbsection1">
+						<section id="fullpage fbsection1">
 						<div class="masthead">
 
 							<div class="container">
@@ -237,7 +237,7 @@
 							</div>
 							
 													</section>
-						<section id="fbsection1" class="masthead">
+						<section id="fullpage fbsection1" class="masthead">
 							<h1 class="mb-4 align-items-center">Gallery Fan Art</h1>
 							<div class="gallerycard"></div>
 						
@@ -302,6 +302,17 @@
 	  autoplaySpeed: 2000,
 	});
 	});
+
+	$(document).ready(function() {
+	$('#fullpage').fullpage({
+		//options here
+		autoScrolling:true,
+		scrollHorizontally: true
+	});
+
+	//methods
+	$.fn.fullpage.setAllowScrolling(false);
+});
 	
 	const parent = $(".gallerycard");
 		
