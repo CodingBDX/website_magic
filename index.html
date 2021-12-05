@@ -304,19 +304,6 @@
 	});
 
 	
-	$('#fullpage').fullpage({
-		//options here
-		scrollBar: true,
-		responsiveHeight: 600,
-        afterResponsive: function(isResponsive){
-
-        }
-	});
-
-
-
-
-	
 	
 
 	});
@@ -342,7 +329,13 @@
 		} 
 	
 	</script>
-
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+        scrollBar: true
+    });
+</script>
 	</body>
 	<!--end::Body-->
 </html>
