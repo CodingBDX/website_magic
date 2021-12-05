@@ -290,7 +290,7 @@
 	  $('.slide-container').slick({
 		arrows: false,
 		draggable: true,
-		autoplay: true, /* this is the new line */
+		autoplay: true, 
 		autoplaySpeed: 2000,
 		infinite: true,
 		slidesToShow: 1,
@@ -305,6 +305,16 @@
 	  autoplay: true,
 	  autoplaySpeed: 2000,
 	});
+
+	$('#fullpage').fullpage({
+		
+		autoScrolling:true,
+		scrollHorizontally: true,
+	});
+
+	
+	$.fn.fullpage.setAllowScrolling(false);
+
 	});
 
 	
@@ -328,17 +338,7 @@
 		} 
 	
 	</script>
-	<script type="text/javascript" >
-$(document).ready(function() {
-	$('#fullpage').fullpage({
-		//options here
-		autoScrolling:true,
-		scrollHorizontally: true
-	});
 
-	//methods
-	$.fn.fullpage.setAllowScrolling(false);
-</script>
 	</body>
 	<!--end::Body-->
 </html>
