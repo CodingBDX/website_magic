@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $('.dispath1').load("https://mtg-proxy.netlify.app/html/webcamcard.html");
     $('.slide-container').slick({
       arrows: false,
       draggable: true,
