@@ -383,6 +383,24 @@
 		  slide.append(img);
 		  parent.append(slide);
 		} 
+
+
+		$(function(){
+             
+
+			 $('#trigger').triggerOnView([
+				 {
+					 element: $('#exampleItem1'),
+					 default: {left: -100, opacity: 0},
+					 in: {left: 0, opacity: 1}
+				 },
+				 {
+					 element: $('#exampleItem2'),
+					 default: {left: 100, opacity: 0},
+					 in: {left: 0, opacity: 1}
+				 }
+			 ]);
+		 });
 	
 	</script>
 
