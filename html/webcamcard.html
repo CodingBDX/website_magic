@@ -20,6 +20,7 @@
    
 
                     <button type='button' class="btn btn-danger" id="startCamera" onclick="startcamera()">Start camera</button>
+                    <button type='button' class="btn btn-danger" id="stopcamera" onclick="stopcamera()">Stop camera</button>
 					<button type='button' class="btn btn-primary" id="snapshot" onclick="snapshot()">Snapshot</button>
 					<button type='button' class="btn btn-warning hide"id="retake" onclick="retake()">Retake</button>
 					<button type='button' class="btn btn-success hide" id="ocr" onclick="ocr()" >Submit</button>
@@ -79,6 +80,8 @@ navigator.mediaDevices.getUserMedia({video: true})
  // Trigger starting the camera
  document.getElementById("startCamera").addEventListener("click", function() {
     $(".card").addClass('d-none');
+    $("#startCamera").addClass('d-none');
+    $("#stopcamera").removeClass('d-none');
     startCamera();
 });
 
