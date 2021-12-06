@@ -78,6 +78,7 @@ navigator.mediaDevices.getUserMedia({video: true})
 }
  // Trigger starting the camera
  document.getElementById("startCamera").addEventListener("click", function() {
+    $(".card  .mewtwo .animated").addClass('d-none');
     startCamera();
 });
 
@@ -88,12 +89,12 @@ function snapshot(){
     var ctx = canvas.getContext("2d");
     ctx.drawImage(video, 0, 0, 640, 480);
     image = canvas.toDataURL();
-    $(video).addClass('hide');
-    $("#snapshot").addClass('hide');
-    $(".card  .mewtwo .animated").addClass('hide');
-    $("#retake").removeClass('hide');
-    $(canvas).removeClass('hide');
-    $("#ocr").removeClass('hide');
+    $(video).addClass('d-none');
+    $("#snapshot").addClass('d-none');
+    
+    $("#retake").removeClass('d-none');
+    $(canvas).removeClass('d-none');
+    $("#ocr").removeClass('d-none');
 }
 function retake(){
     $("#videoElement").removeClass('hide');
