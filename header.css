@@ -5,9 +5,9 @@
  
 }
 .imageCycle1 { background-image: url(https://mtg-proxy.netlify.app/1.jpg);}
-.imageCycle1 { background-image: url(https://mtg-proxy.netlify.app/2.jpg);}
-.imageCycle1 { background-image: url(https://mtg-proxy.netlify.app/3.jpg);}
-.imageCycle1 { background-image: url(https://mtg-proxy.netlify.app/4.jpg);}
+.imageCycle2 { background-image: url(https://mtg-proxy.netlify.app/2.jpg);}
+.imageCycle3 { background-image: url(https://mtg-proxy.netlify.app/3.jpg);}
+.imageCycle4 { background-image: url(https://mtg-proxy.netlify.app/4.jpg);}
 #presentation_magic {
   background-size: cover;
   background-attachment: fixed;
