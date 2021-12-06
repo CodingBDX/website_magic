@@ -349,6 +349,7 @@ main div:hover button {
 
 .flex-wrap {
   flex-wrap: wrap;
+  height:450px;
 }
 
 .flex-gap > * {
