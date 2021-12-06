@@ -11,7 +11,7 @@ $wizard: #4FACFF;
 
 
 
-@media  (max-width : 430px) {
+@media(max-width:430px) {
 
 
 
@@ -35,7 +35,7 @@ $wizard: #4FACFF;
     width:280px;
     height:400px;
     margin-left:4px;
-}
+ }
 }
 
 @media(min-width:992px) {
