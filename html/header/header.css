@@ -1,11 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
 
-$border-radius-size: 14px;
-$barbarian: #EC9B3B;
-$archer: #EE5487;
-$giant: #F6901A;
-$goblin: #82BB30;
-$wizard: #4FACFF;
+
+
 
 
 
@@ -180,23 +176,23 @@ $wizard: #4FACFF;
 }
 
 .clash-card__level--barbarian {
-  color: $barbarian;
+  color:  #EC9B3B;
 }
 
 .clash-card__level--archer {
-  color: $archer;
+  color: #EE5487;
 }
 
 .clash-card__level--giant {
-  color: $giant;
+  color: #F6901A;
 }
 
 .clash-card__level--goblin {
-  color: $goblin;
+  color:  #82BB30;
 }
 
 .clash-card__level--wizard {
-  color: $wizard;
+  color: #4FACFF;
 }
 
 .clash-card__unit-name {
@@ -255,8 +251,8 @@ $wizard: #4FACFF;
   
   color: white;
   font-weight: 700;
-  border-bottom-left-radius: $border-radius-size;
-  border-bottom-right-radius: $border-radius-size;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
   
   .one-third {
     width: 33%;
