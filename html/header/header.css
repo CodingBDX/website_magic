@@ -207,45 +207,7 @@
   margin-bottom: 10px;  
 }
 
-.clash-card__unit-stats--barbarian {
-  background: $barbarian;
-  
-  .one-third {
-     border-right: 1px solid #BD7C2F;
-  }
-}
 
-.clash-card__unit-stats--archer {
-  background: $archer;
-  
-  .one-third {
-     border-right: 1px solid #D04976;
-  }
-}
-
-.clash-card__unit-stats--giant {
-  background: $giant;
-  
-  .one-third {
-     border-right: 1px solid darken($giant, 8%);
-  }
-}
-
-.clash-card__unit-stats--goblin {
-  background: $goblin;
-  
-  .one-third {
-     border-right: 1px solid darken($goblin, 6%);
-  }
-}
-
-.clash-card__unit-stats--wizard {
-  background: $wizard;
-  
-  .one-third {
-     border-right: 1px solid darken($wizard, 6%);
-  }
-}
 
 .clash-card__unit-stats {
   
