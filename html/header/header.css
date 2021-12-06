@@ -269,6 +269,7 @@
 
 main {
   font-size: 0; /* ??? */
+  height:600px;
 }
 
 main img {
