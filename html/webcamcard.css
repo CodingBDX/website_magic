@@ -12,14 +12,8 @@
 
   width: clamp(600px, 61vh, 18vw);
   height: clamp(880px, 85vh, 25.2vw);
-  @media screen and (min-width: 600px) {
-    // width: 61vh;
-    // height: 85vh;
-    // max-width: 500px;
-    // max-height: 700px;
-    width: clamp(12.9vw, 61vh, 18vw);
-    height: clamp(18vw, 85vh, 25.2vw);
-  }
+  
+   
   
   position: relative;
   overflow: hidden;
