@@ -149,10 +149,7 @@
   transition: none;
   animation: holoCard 12s ease 0s 1;
   
-  &:after {
-    transition: none;
-    animation: holoSparkle 12s ease 0s 1;
-  }
+ 
 }
 
 
