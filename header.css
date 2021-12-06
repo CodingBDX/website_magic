@@ -1,7 +1,8 @@
 #imagechange {
   background-size: cover;
   background-attachment: fixed;
-
+width:100%;
+height:100%;
  
 }
 .imageCycle1 { background-image: url(https://mtg-proxy.netlify.app/1.jpg);}
