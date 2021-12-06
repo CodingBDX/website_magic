@@ -2,7 +2,7 @@
 
 
 $(document).ready(function(){
-  
+
   var classCycle=['imageCycle1','imageCycle2','imageCycle3', 'imageCycle4'];
 
   var randomNumber = Math.floor(Math.random() * classCycle.length);
@@ -41,7 +41,7 @@ adaptiveHeight: true,
   });
 
   var myFullpage = new fullpage('#fullpage', {
-      anchors: ['Presentation', 'gallery_art_magic_the_gathering', 'take_picture_magic_the_gathering'],
+      anchors: ['Presentation', 'gallery_art_magic_the_gathering', 'take_picture_magic_the_gathering', 'Print_your_card_magic'],
       sectionsColor: ['#dd3d31', '#fff'],
       scrollBar: true,
       responsiveHeight: 600,
