@@ -8,7 +8,7 @@ $(document).ready(function(){
   var randomNumber = Math.floor(Math.random() * classCycle.length);
   var classToAdd = classCycle[randomNumber];
   
-  $('#bode').addClass(classToAdd);
+  $('#imagechange').addClass(classToAdd);
   
     $('.slide-container').slick({
       arrows: false,
