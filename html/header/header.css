@@ -283,7 +283,9 @@ main div {
   height:600px;
 }
 
-
+.printheight{
+  height:600px;
+}
 
 .noGutter {
   margin: 0;
