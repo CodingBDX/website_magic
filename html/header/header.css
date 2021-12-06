@@ -280,6 +280,7 @@ main img {
 
 main div {
   transition: all 0.3s;
+  height:600px;
 }
 
 
