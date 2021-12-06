@@ -4,7 +4,7 @@
      
 		
 		const video = document.querySelector("#videoElement");
-
+        function startCamera() {
 if (navigator.mediaDevices.getUserMedia) {
     navigator.mediaDevices.getUserMedia({video: true})
         .then(function (stream) {
@@ -13,6 +13,11 @@ if (navigator.mediaDevices.getUserMedia) {
             throw new Error("Problème dans le stream !")
     });
 }
+        }
+         // Trigger starting the camera
+         document.getElementById("startCamera").addEventListener("click", function() {
+            startCamera();
+        });
 
         var image;
         function snapshot(){
