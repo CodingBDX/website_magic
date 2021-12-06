@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
 
-
+$border-radius-size: 14px;
 $barbarian: #EC9B3B;
 $archer: #EE5487;
 $giant: #F6901A;
