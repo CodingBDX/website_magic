@@ -391,7 +391,21 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
  <script src="https://mtg-proxy.netlify.app/dispath.js"></script>
 <script   src="https://mtg-proxy.netlify.app/myscript.js"></script>
-
+<script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+  <script src="utils/pdf.js"></script>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      try {
+        MicroModal.init({
+          awaitCloseAnimation: true // set to false, to remove close animation
+        });
+      } catch (e) {
+        console.error("micromodal error: ", e);
+      }
+    });
+  </script>
 
 	</body>
 	<!--end::Body-->
