@@ -1,3 +1,10 @@
+
+
+
+@media screen and (max-width: 1280px)
+{
+    /* Rédigez vos propriétés CSS ici */
+
 .slide-container {
     margin: auto;
     width: 100%;
@@ -11,4 +18,5 @@
     height: 450px;
    
     margin: 30px;
+}
 }
