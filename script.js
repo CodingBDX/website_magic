@@ -273,10 +273,7 @@ function fill(value, cardType, configuration) {
             configuration
           )
         )
-        .catch((e) => {
-          appendToErrorList(card.name);
-          console.error(`Booo:\n ${e}`);
-        });
+      
     });
 }
 
