@@ -6,7 +6,7 @@ height:100%;
 filter: blur(1.5rem);
 }
 
-.margintoppicture{margin-top:-150%;}
+
 .imageCycle1 { background-image: url(https://mtg-proxy.netlify.app/1.jpg);}
 .imageCycle2 { background-image: url(https://mtg-proxy.netlify.app/2.jpg);}
 .imageCycle3 { background-image: url(https://mtg-proxy.netlify.app/3.jpg);}
