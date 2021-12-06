@@ -1,8 +1,8 @@
 
 
 
-@media all and (max-device-width: 480px)
-{
+ @media screen and (max-width: 350px) { 
+
 
 
 .slide-container {
@@ -21,7 +21,7 @@
 }
 
 
-.slide img{
+.slide img {
     width:280px;
     height:400px;
     margin-left:4px;
