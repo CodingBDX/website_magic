@@ -231,20 +231,3 @@
 
 
 
-.cards .card {
-  &:nth-child(2) {
-    &, &:before, &:after {
-      animation-delay: 0.25s;
-    }
-  }
-  &:nth-child(3) {
-    &, &:before, &:after {
-      animation-delay: 0.5s;
-    }
-  }
-  &:nth-child(4) {
-    &, &:before, &:after {
-      animation-delay: 0.75s;
-    }
-  }
-}
