@@ -78,7 +78,7 @@ navigator.mediaDevices.getUserMedia({video: true})
 }
  // Trigger starting the camera
  document.getElementById("startCamera").addEventListener("click", function() {
-    $(".card  .mewtwo .animated").addClass('d-none');
+    $(".card").addClass('d-none');
     startCamera();
 });
 
@@ -97,11 +97,11 @@ function snapshot(){
     $("#ocr").removeClass('d-none');
 }
 function retake(){
-    $("#videoElement").removeClass('hide');
-    $("#snapshot").removeClass('hide');
-    $("#retake").addClass('hide');
-    $("#drawCanvas").addClass('hide');
-    $("#ocr").addClass('hide');          
+    $("#videoElement").removeClass('d-none');
+    $("#snapshot").removeClass('d-none');
+    $("#retake").addClass('d-none');
+    $("#drawCanvas").addClass('d-none');
+    $("#ocr").addClass('d-none');          
 }
 var cardName;
 function ocr(){
