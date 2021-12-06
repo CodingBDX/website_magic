@@ -5,10 +5,10 @@ width:100%;
 height:100%;
  
 }
-.imageCycle1 { background-image: url(https://mtg-proxy.netlify.app/1.jpg);}
-.imageCycle2 { background-image: url(https://mtg-proxy.netlify.app/2.jpg);}
-.imageCycle3 { background-image: url(https://mtg-proxy.netlify.app/3.jpg);}
-.imageCycle4 { background-image: url(https://mtg-proxy.netlify.app/4.jpg);}
+.imageCycle1 { background-image: url(https://mtg-proxy.netlify.app/1.jpg);filter: blur(1.5rem);}
+.imageCycle2 { background-image: url(https://mtg-proxy.netlify.app/2.jpg);filter: blur(1.5rem);}
+.imageCycle3 { background-image: url(https://mtg-proxy.netlify.app/3.jpg);filter: blur(1.5rem);}
+.imageCycle4 { background-image: url(https://mtg-proxy.netlify.app/4.jpg);filter: blur(1.5rem);}
 #presentation_magic {
   background-size: cover;
   background-attachment: fixed;
