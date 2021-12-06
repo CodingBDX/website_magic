@@ -78,15 +78,8 @@ navigator.mediaDevices.getUserMedia({video: true})
 }
 }
 
+$("#stopcamera").addClass('d-none');
 
-document.getElementById("stopcamera").addEventListener("click", function() function stopVideoOnly(stream) {
-    stream.getTracks().forEach(function(track) {
-        if (track.readyState == 'live' && track.kind === 'video') {
-            track.stop();
-        }
-    });
-}
-}
  // Trigger starting the camera
  document.getElementById("startCamera").addEventListener("click", function() {
     $(".card").addClass('d-none');
