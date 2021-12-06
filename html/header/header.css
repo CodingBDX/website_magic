@@ -11,6 +11,33 @@ $wizard: #4FACFF;
 
 
 
+@media only screen 
+and (max-width : 320px) {
+
+
+
+.slide-container {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.card {
+    width: 320px;
+    height: 450px;
+   
+    margin: 30px;
+}
+
+
+.slide img {
+    width:280px;
+    height:400px;
+    margin-left:4px;
+}
+}
 
 @media(min-width:992px) {
   .masthead-page h1 {
