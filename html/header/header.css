@@ -343,7 +343,29 @@ main div:hover button {
   display: none;
 }
 
+.flex {
+  display: flex;
+}
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-gap > * {
+  margin: 0 0.5rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-content-start {
+  align-content: flex-start;
+}
 
 @media print {
   .overflow-y {
