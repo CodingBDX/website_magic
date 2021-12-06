@@ -106,8 +106,8 @@
   position: relative;
   height: 230px;
   margin-bottom: 35px;
-  border-top-left-radius: $border-radius-size;
-  border-top-right-radius: $border-radius-size;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
 }
 
 .clash-card__image--barbarian {
@@ -209,42 +209,7 @@
 
 
 
-.clash-card__unit-stats {
-  
-  color: white;
-  font-weight: 700;
-  border-bottom-left-radius: 14px;
-  border-bottom-right-radius: 14px;
-  
-  .one-third {
-    width: 33%;
-    float: left;
-    padding: 20px 15px;
-  }
-  
-  sup {
-    position: absolute;
-    bottom: 4px; 
-    font-size: 45%;
-    margin-left: 2px;
-  }
-  
-  .stat {
-    position: relative;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .stat-value {
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 12px;
-  }
 
-  .no-border {
-    border-right: none;
-  }
-}
 
 .clearfix:after {
 	visibility: hidden;
