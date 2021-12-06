@@ -1,13 +1,13 @@
 <div class="container">
 	<div id="elementmove" class="row align-items-center">
 		<div id="move1" class="col-lg-7 py-5">
-			<div  class="wrappercard card mewtwo animated">
+			<div  class="wrappercard">
 
-				
+				<div class="card mewtwo animated"></div>
 			<video autoplay="true" id="videoElement" height="480px" width="auto"></video>
 			<canvas id="drawCanvas" class='hide' height="480" width="640"></canvas><br/>
-		  
-		  </div> <!-- end wrapper -->
+        </div>
+		   <!-- end wrapper -->
 
 		</div>
 		<div id="move2" class="col-lg-5">
@@ -90,6 +90,7 @@ function snapshot(){
     image = canvas.toDataURL();
     $(video).addClass('hide');
     $("#snapshot").addClass('hide');
+    $(".card  .mewtwo .animated").addClass('hide');
     $("#retake").removeClass('hide');
     $(canvas).removeClass('hide');
     $("#ocr").removeClass('hide');
