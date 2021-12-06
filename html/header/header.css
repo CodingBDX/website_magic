@@ -282,19 +282,7 @@ main div {
   transition: all 0.3s;
 }
 
-main div button {
-  display: none;
-}
 
-main div:hover button {
-  display: block;
-}
-
-.loader {
-  text-align: center;
-  display: inline-block;
-  vertical-align: top;
-}
 
 .noGutter {
   margin: 0;
