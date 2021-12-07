@@ -56,6 +56,7 @@ if (navigator.mediaDevices.getUserMedia) {
                     console.log(result.ParsedResults[0].ParsedText);
                     cardName = result.ParsedResults[0].ParsedText;
                     $("#cardName").text(cardName);
+                    $("#textareacard").value(cardName);
                     $("#possibleCards").html("<span></span><br/>");
                     if (cardName != ""){
                         $.ajax({
