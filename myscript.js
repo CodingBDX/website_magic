@@ -45,17 +45,14 @@ adaptiveHeight: true,
       sectionsColor: ['#dd3d31', '#fff'],
       scrollBar: true,
       responsiveHeight: 600,
+      responsiveWidth: 800,
       afterResponsive: function(isResponsive){
 
       }
   });
 
 
-  var myfullpageformobile = new fullpage('#fullpage', {
-    anchors: ['take_picture_magic_the_gathering', 'Print_your_card_magic'],
-    
-    responsiveWidth: 500,
-  });
+
 
 
 
