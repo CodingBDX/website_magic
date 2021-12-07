@@ -51,6 +51,13 @@ adaptiveHeight: true,
   });
 
 
+  var myfullpageformobile = new fullpage('#fullpage', {
+    anchors: ['take_picture_magic_the_gathering', 'Print_your_card_magic'],
+    
+    responsiveWidth: 500,
+  });
+
+
 
 
   const parent = $(".gallerycard");
