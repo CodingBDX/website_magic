@@ -776,6 +776,7 @@ main {
   overflow-y: auto;
   height:550px;
 }
+.bottommagic {bottom:1.5em;}
 .relative {
   position: relative;
 }
