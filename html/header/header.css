@@ -372,5 +372,5 @@ main div {
   }
 }
 .deck {
-  height:600px;
+  overflow-y:auto;
 }
