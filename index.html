@@ -315,118 +315,75 @@
 						
 						<section id="fbsection3" class="section">
 							
-							<div id="imagechange"  >
-							
-							<div  class="container printheight">
-								<div  class="row">
-									
-									<div  class="col-4">
-									 
-										<div id="cards_landscape_wrap-2">
-															<div class="card-flyer">
-																<div class="text-box">
-																	<div class="image-box">
-																		<img src="https://mtg-proxy.netlify.app/printheader.jpg" alt="" />
-																	</div>
-																	<div class="text-container">
-																		<h6>Title 01</h6>
-																
-																		<button id="shareUrl" type="button" class="absolute r-0 p-2">🔗</button>
-<div class="form-group">
-<textarea rows="6" id="cards textareacard" class="cards form-control rounded-0"  placeholder="" wrap="off" rows="10">
-2 Duress (M19)
-1 Gyome, Master Chef
-1 Ruxa, Patient Professor
-1 Riverglide Pathway // Lavaglide Pathway
-1 https://i.imgur.com/x2bOOjY.jpg
-1 Ashiok, Nightmare Muse
-</textarea>
-</div>
-																		<div class="form-group">
-																			<textarea id="extra_tokens" rows="2" class="form-control rounded-0 extra_tokens" placeholder="1 Squirrel" wrap="off" rows="2">
-																	  1 Squirrel (UND)
-																	  1 Shark
-																	  </textarea>
-																	  </div>
-																	  <div class="form-group">
-																			<textarea id="extra_emblems" rows="2" class="form-control rounded-0 extra_emblems" placeholder="1 Teferi, Hero of Dominaria" wrap="off"
-																			  rows="2">
-																	  Teferi, Hero of Dominaria (MED)
-																	  Teferi, Hero of Dominaria
-																	  </textarea>
-																		 </div>
-
-																		  <div class="error hidden alert alert-warning alert-dismissible fade show" role="alert">
-																			<strong>Sorry. We could not find:</strong> 
-																			<button type="button" onclick="this.parentElement.classList.toggle('hidden');" class="close" data-dismiss="alert" aria-label="Close">
-																			  <span aria-hidden="true">&times;</span>
-																			</button>
-																		  </div>
-							
-																	
-																		
-																	  <div class="mb-2 grid gap grid-flow-col">
-																		<button class="display">&#128270;</button>
-																		<button class="print">&#128424;</button>
-																	  </div>
-																	  <select class="mb-2 size">
-																		<option value="normalSize">Normal card size</option>
-																		<option value="smallSize">Small card size</option>
-																		<option value="tinySize">Tiny card size</option>
-																	  </select>
-																	  <select class="mb-2 gutter">
-																		<option value="noGutter">No gutter</option>
-																		<option value="tinyGutter">Tiny gutter</option>
-																		<option value="smallGutter">Small gutter</option>
-																	  </select>
-																	  <select class="mb-2 sheet">
-																		<option value="A0">Sheet size A0</option>
-																		<option value="A1">Sheet size A1</option>
-																		<option value="A2">Sheet size A2</option>
-																		<option value="A3">Sheet size A3</option>
-																		<option value="A4" selected>Sheet size A4</option>
-																		<option value="A5">Sheet size A5</option>
-																		<option value="A6">Sheet size A6</option>
-																	  </select>
-																	  <select class="mb-2 cardAs">
-																		<option value="image">Card as Image</option>
-																		<option value="text">Card as Text</option>
-																	  </select>
-																	  <select class="mb-2 decklist">
-																		<option value="without">Without decklist</option>
-																		<option value="with">With decklist</option>
-																	  </select>
-																	  <select class="mb-2 skipBasicLands">
-																		<option value="with">With basic lands</option>
-																		<option value="without">Without basic lands</option>
-																	  </select>
-																		
-																		</div>
-																</div>
-															</div>
-													</div>
-
-										
-							
-									</div>
-									<div  class="col-8 card-flyer">
-										<div class="py-5 px-4 ">
-											<h1 class="mb-4 text-danger text-center"><strong>Print your cards</strong></h1>
-										
-											<main class="deck  flex flex-wrap ">
-											</main>
-											
-											
-											
-										 
-										   
-											
-										
-									</div>
+							<div class="error mb-2 relative hidden">
+								<button type="button" class="absolute r-0 py-2 px-3"
+								  onclick="this.parentElement.classList.toggle('hidden');">✕</button>
+								<div class="p-2">
+								  <span>Sorry. We could not find:</span>
+								  <ul style="list-style: inside disc;"></ul>
 								</div>
-							</div>	
-								
-						</div>
+							  </div>
+							  <div class="mb-2 relative">
+								<button id="shareUrl" type="button" class="absolute r-0 p-2">🔗</button>
+								<textarea id="cards" class="cards rb-0 mb-0_5"
+								  placeholder="2 Opt&#10;1 Riverglide Pathway // Lavaglide Pathway&#10;1 https://i.imgur.com/x2bOOjY.jpg"
+								  wrap="off" rows="10">
+						  2 Duress (M19)
+						  1 Gyome, Master Chef
+						  1 Ruxa, Patient Professor
+						  1 Riverglide Pathway // Lavaglide Pathway
+						  1 https://i.imgur.com/x2bOOjY.jpg
+						  1 Ashiok, Nightmare Muse
+						  </textarea>
+								<textarea id="extra_tokens" class="rb-0 rt-0 mb-0_5 extra_tokens" placeholder="1 Squirrel" wrap="off" rows="2">
+						  1 Squirrel (UND)
+						  1 Shark
+						  </textarea>
+								<textarea id="extra_emblems" class="rt-0 extra_emblems" placeholder="1 Teferi, Hero of Dominaria" wrap="off"
+								  rows="2">
+						  Teferi, Hero of Dominaria (MED)
+						  Teferi, Hero of Dominaria
+						  </textarea>
+							  </div>
+							  <div class="mb-2 grid gap grid-flow-col">
+								<button class="display">&#128270;</button>
+								<button class="print">&#128424;</button>
+							  </div>
+							  <select class="mb-2 size">
+								<option value="normalSize">Normal card size</option>
+								<option value="smallSize">Small card size</option>
+								<option value="tinySize">Tiny card size</option>
+							  </select>
+							  <select class="mb-2 gutter">
+								<option value="noGutter">No gutter</option>
+								<option value="tinyGutter">Tiny gutter</option>
+								<option value="smallGutter">Small gutter</option>
+							  </select>
+							  <select class="mb-2 sheet">
+								<option value="A0">Sheet size A0</option>
+								<option value="A1">Sheet size A1</option>
+								<option value="A2">Sheet size A2</option>
+								<option value="A3">Sheet size A3</option>
+								<option value="A4" selected>Sheet size A4</option>
+								<option value="A5">Sheet size A5</option>
+								<option value="A6">Sheet size A6</option>
+							  </select>
+							  <select class="mb-2 cardAs">
+								<option value="image">Card as Image</option>
+								<option value="text">Card as Text</option>
+							  </select>
+							  <select class="mb-2 decklist">
+								<option value="without">Without decklist</option>
+								<option value="with">With decklist</option>
+							  </select>
+							  <select class="mb-2 skipBasicLands">
+								<option value="with">With basic lands</option>
+								<option value="without">Without basic lands</option>
+							  </select>
+						
+						  
+							<main class="deck overflow-y ml-2 mr-4 justify-center md-justify-start flex flex-wrap align-content-start">
+							</main>
 						</section>
 						
 					</div>
