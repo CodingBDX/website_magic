@@ -263,7 +263,50 @@
 						</section>
 					
 						<section id="presentation_magic" class="section masthead">
-						<div class="dispath1"></div>
+						
+							<div class="container-fluid">
+    
+								<div class="container">
+									<div id="elementmove" class="row">
+										<div id="move1" class="col-lg-7 py-5">
+											<div  class="wrappercard">
+								<div id="possibleCards"></div>
+												<div class="card mewtwo animated">
+										
+										</div>
+										<video autoplay="true" id="videoElement" height="480px" width="auto"></video>
+										<canvas id="drawCanvas" class='hide' height="480" width="640"></canvas><br/>
+									</div>
+										   <!-- end wrapper -->
+								
+										</div>
+										<div id="move2" class="col-lg-5">
+											<div class="py-5 px-4 masthead-cards margintoppicture wrapper vcenter-item">
+												<div id="possibleCards"></div>
+											
+												<h1 class="mb-4 text-light">Take picture with your camera</h1>
+												<h2 class="m-0">Put the card into camera and shot it, that detect autamtiquely your card and add in your deck list</h2><br />
+												<div id="picStuff">
+								   
+								
+													<button type='button' class="btn btn-danger" id="startCamera" onclick="startcamera()">Start camera</button>
+													<button type='button' class="btn btn-danger" id="stopcamera" onclick="stopcamera()">Stop camera</button>
+													<button type='button' class="btn btn-primary" id="snapshot" onclick="snapshot()">Snapshot</button>
+													<button type='button' class="btn btn-warning hide"id="retake" onclick="retake()">Retake</button>
+													<button type='button' class="btn btn-success hide" id="ocr" onclick="ocr()" >Submit</button>
+												</div>
+												
+												
+												
+											 
+											   
+												
+											
+										</div>
+									</div>
+								</div>
+								</div>
+								</div>
 
 
 							
@@ -414,7 +457,7 @@
 <script type="text/javascript" src="https://mtg-proxy.netlify.app/triggeronview.js"></script>
 <script type="text/javascript" src="https://mtg-proxy.netlify.app/webcam.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
- <script src="https://mtg-proxy.netlify.app/dispath.js"></script>
+
 <script   src="https://mtg-proxy.netlify.app/myscript.js"></script>
 <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
 
