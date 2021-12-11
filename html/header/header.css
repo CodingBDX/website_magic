@@ -770,6 +770,8 @@ main {
 
 .absolute {
   position: absolute;
+  overflow-y: auto;
+  height:550px;
 }
 
 .relative {
