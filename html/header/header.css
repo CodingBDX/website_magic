@@ -770,10 +770,12 @@ main {
 
 .absolute {
   position: absolute;
+ 
+}
+.deck {
   overflow-y: auto;
   height:550px;
 }
-
 .relative {
   position: relative;
 }
