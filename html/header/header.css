@@ -372,7 +372,7 @@ main div {
   }
 }
 .overflow-y {
-  overflow-y: auto;
+  overflow-y: auto;height:500px;
 }
 .z-indexcard {
   z-index: 999;
