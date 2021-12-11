@@ -376,7 +376,7 @@ main div {
 }
 .z-indexcard {
   z-index: 99;
- display:inline-block;
+  bottom: 0.5rem;
 }
 .mt-6 {
   margin-top: 7rem; 
