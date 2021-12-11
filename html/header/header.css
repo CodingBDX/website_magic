@@ -373,6 +373,12 @@ main div {
 }
 .overflow-y {
   overflow-y: auto;height:500px;
+}main div button {
+  display: none;
+}
+
+main div:hover button {
+  display: block;
 }
 .z-indexcard {
   z-index: 99;
