@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 let deckElement = document.querySelector(".deck");
 const baseUrl = "https://api.scryfall.com/cards/search?q=";
 const cardPath = "name=";
@@ -23,9 +15,6 @@ const getEmblemUrl = (cardName, set) =>
   `${baseUrl}${emblemPath}${encodeURI(cardName)}${
     !!set ? `%20set:${set.length === 3 ? "t" : ""}${set}` : ""
   }`;
-  
-  
-
 
 function extracts(input, from, to) {
   const start = input.indexOf(from) + from.length;
@@ -178,7 +167,7 @@ function appendCards(sources, quantity, isCustom, configuration) {
         const button = document.createElement("button");
         button.textContent = source.set;
         button.setAttribute("type", "button");
-        button.classList.add("overflow-y", "z-indexcard", "btn", "btn-danger", "uppercase", "text-base");
+        button.classList.add("absolute", "b-2", "uppercase", "text-base");
         button.onclick = switchPrint;
         div.appendChild(button);
       }
@@ -273,7 +262,10 @@ function fill(value, cardType, configuration) {
             configuration
           )
         )
-      
+        .catch((e) => {
+          appendToErrorList(card.name);
+          console.error(`Booo:\n ${e}`);
+        });
     });
 }
 
@@ -326,8 +318,7 @@ const buildPdf = (
   return doc;
 };
 
-function getCardSize(sizeClass) {
-  const scale = sizeClass === "normalSize" ? 100 : (sizeClass === "smallSize" ? 90 : 80);
+function getCardSize(scale) {
   return {
     width: 63 * scale / 100,
     height: 88 * scale / 100,
@@ -418,10 +409,6 @@ document.querySelector(".print").onclick = function () {
 };
 
 document.querySelector(".display").onclick = renderDeck;
-
-
-
-
 
 function getLoaderHtml(width, height) {
   return `<div class="loader">
