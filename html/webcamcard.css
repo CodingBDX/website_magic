@@ -59,6 +59,8 @@
   --color1: var(--mewtwo1);
   --color2: var(--mewtwo2);
   --front: var(--mewtwofront);
+  width: 280px;
+  height: 520px;
 }
 
 
