@@ -597,53 +597,9 @@ main div {
   }
 }
 
-/* This come from Scryfall. Ask them if we can reuse this awesome trick */
-/* You guys rocks */
-.blurry-background {
-  position: fixed;
-  overflow: hidden;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: -1;
-}
 
-.blurry-background-art {
-  background-color: #222;
-  background-position: top;
-  background-repeat: none;
-  background-size: cover;
-  position: absolute;
-  bottom: -30px;
-  left: -30px;
-  right: -30px;
-  top: -30px;
-  -webkit-backface-visibility: hidden;
-  -webkit-filter: blur(15px);
-  -webkit-perspective: 1000;
-  -webkit-transform: translateZ(0);
-  backface-visibility: hidden;
-  filter: blur(15px);
-  perspective: 1000;
-  transform: translateZ(0);
-}
 
-.blurry-background-art::before {
-  background: linear-gradient(
-    180deg,
-    rgba(32, 43, 56, 0.5) 0,
-    rgba(32, 43, 56, 0.85) 50%,
-    var(--background-body)
-  );
-  bottom: 0;
-  content: "";
-  display: block;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
+
 
 .z--1 {
   z-index: -1;
