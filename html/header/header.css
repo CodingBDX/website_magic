@@ -371,6 +371,9 @@ main div {
     margin: 0;
   }
 }
-.deck {
-  overflow-y:auto;
+.overflow-y {
+  overflow-y: auto;
+}
+.mt-6 {
+  margin-top: 7rem; // or the value you want
 }
