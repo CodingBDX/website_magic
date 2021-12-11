@@ -375,8 +375,8 @@ main div {
   overflow-y: auto;height:500px;
 }
 .z-indexcard {
-  z-index: 999;
-  position:fixed;
+  z-index: 99;
+ display:inline-block;
 }
 .mt-6 {
   margin-top: 7rem; 
