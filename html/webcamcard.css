@@ -2,7 +2,7 @@
 
   --mewtwo1: #efb2fb;
   --mewtwo2: #acc6f8;
-  --mewtwofront: url(https://c1.scryfall.com/file/scryfall-cards/large/front/6/1/6194fab1-c185-4df5-8900-37d28ffae545.jpg?1562548740);
+  --mewtwofront: url(https://mtg-proxy.netlify.app/cardphoto.jpg);
 }
 
 
@@ -10,8 +10,8 @@
 .card {
 
 
-  width: 380px;
-  height: 620px;
+  width: 420px;
+  height: 585px;
   
    
   
