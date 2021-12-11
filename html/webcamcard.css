@@ -10,8 +10,8 @@
 .card {
 
 
-  width: clamp(600px, 61vh, 18vw);
-  height: clamp(880px, 85vh, 25.2vw);
+  width: 280px
+  height: 520px;
   
    
   
