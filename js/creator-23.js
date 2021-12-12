@@ -514,7 +514,7 @@ async function addFrame(additionalMasks = [], loadingFrame = false) {
 		}
 	} else {
 		frameToAdd = loadingFrame;
-		if (frameToAdd.masks.length == 0 || (frameToAdd.masks[0].src.includes('img/frames/mask'))) {
+		if (frameToAdd.masks.length == 0 || (frameToAdd.masks[0].src.includes('/img/frames/mask'))) {
 			maskThumbnail = false;
 		}
 	}
