@@ -53,8 +53,7 @@
     0 55px 35px -20px rgba(0, 0, 0, 0.5);
 }
 #drawCanvas {height::auto; width:100%}
-#videoElement {width:150px;
-height:150px;}
+#videoElement {height::auto; width:100%}
 
 .card.mewtwo {
   --color1: var(--mewtwo1);
