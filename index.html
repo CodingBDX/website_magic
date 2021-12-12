@@ -488,7 +488,20 @@ Teferi, Hero of Dominaria
                }
            ]);
 
-		  
+		   $('#elementmove3').triggerOnView([
+               {
+                   element: $('#move5'),
+                   default: {bottom: -100, opacity: 0},
+                   in: {bottom: 0, opacity: 1},
+				   time: 2,
+               },
+               {
+                   element: $('#move6'),
+                   default: {top: 100, opacity: 0},
+                   in: {top: 0, opacity: 1},
+				   time: 2,
+               }
+           ]);
     
         
        });
