@@ -409,13 +409,13 @@ Teferi, Hero of Dominaria
 				<div  class="flex-grow-1 me-2 text-center">
 					<a class=" fw-bolder text-gray-800 text-hover-primary fs-6">We can build your card here and Download It!!! Or put into text list for directly print &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           </a>
 					<span class="text-muted fw-bold d-block">Just take 5 minutes</span>
-					 <button class=" align-items-center print btn btn-danger btn-active-light-warning btg-lg ms-2"> tutorial
+					 <button class=" align-items-center print btn backgroundbutton btn-active-light-warning btg-lg ms-2"> tutorial
 						 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 							<path d="M18.3721 4.65439C17.6415 4.23815 16.8052 4 15.9142 4C14.3444 4 12.9339 4.73924 12.003 5.89633C11.0657 4.73913 9.66 4 8.08626 4C7.19611 4 6.35789 4.23746 5.62804 4.65439C4.06148 5.54462 3 7.26056 3 9.24232C3 9.81001 3.08941 10.3491 3.25153 10.8593C4.12155 14.9013 9.69287 20 12.0034 20C14.2502 20 19.875 14.9013 20.7488 10.8593C20.9109 10.3491 21 9.81001 21 9.24232C21.0007 7.26056 19.9383 5.54462 18.3721 4.65439Z" fill="black" />
 						</svg></button>
-						 <button class=" align-items-center print btn btn-danger btn-active-light-warning btg-lg ms-2" onclick='downloadCard();'> Download card
+						 <button class=" align-items-center print btn backgroundbutton btn-active-light-warning btg-lg ms-2" onclick='downloadCard();'> Download card
 						 </button>
-						 <button class=" align-items-center print btn btn-danger btn-active-light-warning btg-lg ms-2"> Put in text deck
+						 <button class=" align-items-center print btn backgroundbutton btn-active-light-warning btg-lg ms-2"> Put in text deck
 						 </button>
 				</div>
 				<canvas class=' shadow  align-items-center mt-6 flex flex-wrap align-content-start carte' width="1500px" height="2100px" id='previewCanvas'></canvas>
@@ -488,7 +488,7 @@ Teferi, Hero of Dominaria
 				
 				
   
-			<select  id="pills-tab" role="tablist"  class='btn btn-danger input mb-2 size form-control form-control-lg'>
+			<select  id="pills-tab" role="tablist"  class='btn backgroundbutton input mb-2 size form-control form-control-lg'>
 											  <option value='Standard-3' onclick='toggleCreatorTabs(event, "frame")'>Frames</option>
 											  <option value='Standard-3' onclick='toggleCreatorTabs(event, "import")'>Regular</option>
 										  <option value='Standard-3' onclick='toggleCreatorTabs(event, "setSymbol")'>Set Symbols</option>
@@ -509,7 +509,7 @@ Teferi, Hero of Dominaria
 									  
 										  
 									  <div class='input-grid margin-bottom'>
-										  <select id='selectFrameGroup' onchange='loadScript("/js/frames/group" + this.value + ".js")' class=' input mb-2 size form-select'>
+										  <select id='selectFrameGroup' onchange='loadScript("/js/frames/group" + this.value + ".js")' class=' input  mb-2 size form-control form-control-lg'>
 											  <option disabled>Standard Frames</option>
 											  <option value='Standard-3'>Regular</option>
 											  <option value='Token-2'>Tokens</option>
@@ -528,7 +528,7 @@ Teferi, Hero of Dominaria
 											  <option disabled>Other Games</option>
 											  <option value='FleshAndBlood'>Flesh and Blood</option>
 										  </select>
-										  <select id='selectFramePack' onchange='loadScript("/js/frames/pack" + this.value + ".js")' class='input  mb-2 size form-select'></select>
+										  <select id='selectFramePack' onchange='loadScript("/js/frames/pack" + this.value + ".js")' class='input   mb-2 size form-control form-control-lg'></select>
 									  </div>
 									  <div class='input-grid margin-bottom'>
 										  <button id='loadFrameVersion' class='input mb-2 size form-select'>Load Frame Version</button>
