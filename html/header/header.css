@@ -721,6 +721,12 @@ main {
 
 .backgroundbutton{background-color: #051C24;}
 
+.border-bottom1 {
+  property: border-bottom,
+  border-width:3px;
+  border-color:#007198;
+}
+    
 html {
   --scrollbarBG: #051C24;
   --thumbBG: #003C57;
