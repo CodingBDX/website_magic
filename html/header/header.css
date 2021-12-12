@@ -14,7 +14,9 @@
     display:none;
 }
 
-
+}.margincard{
+  margin-left:2%;
+}
 
 .card.mewtwo  {
     display:none;
