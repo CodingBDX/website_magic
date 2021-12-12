@@ -42,7 +42,7 @@ adaptiveHeight: true,
 
   var myFullpage = new fullpage('#fullpage', {
       anchors: ['Presentation', 'gallery_art_magic_the_gathering', 'take_picture_magic_the_gathering', 'Print_your_card_magic', 'create_proxy_card_magic'],
-      sectionsColor: ['#CA3C66', '#DB6A8F', '#fff', '#E8AABE'],
+      sectionsColor: ['#374158', '#222D41', '#fff', '#11151D'],
       scrollBar: true,
       responsiveWidth: 900,
      
