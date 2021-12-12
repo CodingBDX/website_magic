@@ -403,9 +403,9 @@ Teferi, Hero of Dominaria
 
 						<section id="fbsection4" class="section">
 <div id="imagechange">
-	<div class="container-fluid">
-		<div  class="row">
-			<div class="col-lg-7 py-5 jumbotron mt-6" style="background-color: #051C24;"  >
+	<div class="container-fluid ">
+		<div  class="row" id="elementmove4">
+			<div class="col-lg-7 py-5 jumbotron mt-6" id="move7" style="background-color: #051C24;"  >
 				<div  class="flex-grow-1 me-2 text-center alert alert-light">
 					<a class=" fw-bolder  text-hover-primary fs-6">We can build your card here and Download It!!! Or put into text list for directly print &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           </a>
 					<span class="text-muted fw-bold d-block">Just take 1 minutes</span>
@@ -425,7 +425,7 @@ Teferi, Hero of Dominaria
 	</div>
 
 
-	<div  class="col-lg-5 mt-6 jumbotron" style="background-color:#506166">
+	<div  class="col-lg-5 mt-6 jumbotron" id="move8" style="background-color:#506166">
 
 
 
@@ -1067,6 +1067,20 @@ Teferi, Hero of Dominaria
                },
                {
                    element: $('#move6'),
+                   default: {top: 100, opacity: 0},
+                   in: {top: 0, opacity: 1},
+				   time: 2,
+               }
+           ]);
+		   $('#elementmove4').triggerOnView([
+               {
+                   element: $('#move7'),
+                   default: {top: -100, opacity: 0},
+                   in: {bottom: 0, opacity: 1},
+				   time: 2,
+               },
+               {
+                   element: $('#move8'),
                    default: {top: 100, opacity: 0},
                    in: {top: 0, opacity: 1},
 				   time: 2,
