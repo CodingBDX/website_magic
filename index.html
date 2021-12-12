@@ -549,14 +549,14 @@ Teferi, Hero of Dominaria
 										  <div id='mask-picker' class='mask-picker'></div>
 									  </div>
 									  <div class='input-grid margin-bottom'>
-										  <button id='addToFull' class='input align-items-center print btn btn-danger btn-active-light-warning btg-lg' onclick='addFrame()'>Add Frame to Card</button>
-										  <button id='addToRightHalf' class='input align-items-center print btn btn-danger btn-active-light-warning btg-lg' onclick='addFrame([{src:"/img/frames/maskRightHalf.png", name:"Right Half"}])'>Add Frame to Card (Right Half)</button>
+										  <button id='addToFull' class='input align-items-center print btn backgroundbutton btn-active-light-warning btg-lg' onclick='addFrame()'>Add Frame to Card</button>
+										  <button id='addToRightHalf' class='input align-items-center print btn backgroundbutton btn-active-light-warning btg-lg' onclick='addFrame([{src:"/img/frames/maskRightHalf.png", name:"Right Half"}])'>Add Frame to Card (Right Half)</button>
 									  </div>
 									  <h5 class='collapsible collapsed padding input-description' onclick='toggleCollapse(event);'>More options</h5>
 										  <div>
 											  <div class='input-grid margin-bottom'>
-												  <button id='addToLeftHalf' class='input align-items-center print btn btn-danger btn-active-light-warning btg-lg' onclick='addFrame([{src:"/img/frames/maskLeftHalf.png", name:"Left Half"}])'>Add Frame to Card (Left Half)</button>
-												  <button id='addToMiddleThird' class='input align-items-center print btn btn-danger btn-active-light-warning btg-lg' onclick='addFrame([{src:"/img/frames/maskMiddleThird.png", name:"Middle Third"}])'>Add Frame to Card (Middle Third)</button>
+												  <button id='addToLeftHalf' class='input align-items-center print btn backgroundbutton btn-active-light-warning btg-lg' onclick='addFrame([{src:"/img/frames/maskLeftHalf.png", name:"Left Half"}])'>Add Frame to Card (Left Half)</button>
+												  <button id='addToMiddleThird' class='input align-items-center print btn backgroundbutton btn-active-light-warning btg-lg' onclick='addFrame([{src:"/img/frames/maskMiddleThird.png", name:"Middle Third"}])'>Add Frame to Card (Middle Third)</button>
 											  </div>
 											  <h5 class='padding input-description'>You can now double click frames and masks to add them to the card. You can do so while holding the shift, control, or alt keys to add to the right half, left half, or middle third, respectively.</h5>
 										  </div>
@@ -602,7 +602,7 @@ Teferi, Hero of Dominaria
 									  <h5 class='margin-bottom padding input-description'>Enter card text</h5>
 									  <textarea id='text-editor' class='input margin-bottom' oninput='textEdited();'></textarea>
 									  <h5 class='margin-bottom padding input-description'>Edit the placement and size of the selected textbox</h5>
-									  <button class='input' onclick='textboxEditor();'>Edit Bounds</button>
+									  <button class='input btn backgroundbutton' onclick='textboxEditor();'>Edit Bounds</button>
 								  </div>
 								  <div class='readable-background padding margin-bottom'>
 									  <h5 class='collapsible collapsed padding input-description' onclick='toggleCollapse(event);'>
@@ -661,9 +661,9 @@ Teferi, Hero of Dominaria
 								  <div class='readable-background padding'>
 									  <h5 class='padding input-description'>Add a textbox to your card</h5>
 									  <div class='padding input-grid'>
-										  <button class='input' onclick='addTextbox("Nickname");'>Nickname</button>
-										  <button class='input' onclick='addTextbox("Power/Toughness");'>Power/Toughness</button>
-										  <button class='input' onclick='addTextbox("DateStamp");'>Date Stamp</button>
+										  <button class='input btn backgroundbutton' onclick='addTextbox("Nickname");'>Nickname</button>
+										  <button class='input btn backgroundbutton' onclick='addTextbox("Power/Toughness");'>Power/Toughness</button>
+										  <button class='input btn backgroundbutton' onclick='addTextbox("DateStamp");'>Date Stamp</button>
 									  </div>
 								  </div>
 							  </div>
@@ -697,12 +697,12 @@ Teferi, Hero of Dominaria
 										  <input id='art-rotate' type='number' class='input' oninput='artEdited();' value=0 step=1 min=0 max=360>
 									  </div>
 									  <div class='input-grid'>
-										  <button class='input' onclick='autoFitArt();'>Auto Fit Art</button>
+										  <button class='input btn backgroundbutton' onclick='autoFitArt();'>Auto Fit Art</button>
 									  </div>
 								  </div>
 								  <div class='readable-background padding'>
 									  <h5 class='padding margin-bottom input-description'>Clears the art, making it blank</h5>
-									  <button class='input margin-bottom' onclick='uploadArt(blank.src);'>Remove Art</button>
+									  <button class='input margin-bottom btn backgroundbutton' onclick='uploadArt(blank.src);'>Remove Art</button>
 								  </div>
 							  </div>
 							  <div id='creator-menu-setSymbol' class='hidden'>
@@ -741,12 +741,12 @@ Teferi, Hero of Dominaria
 										  <input id='setSymbol-zoom' type='number' class='input' oninput='setSymbolEdited();' value=100 step=0.1 min=0>
 									  </div>
 									  <div class='input-grid'>
-										  <button class='input' onclick='resetSetSymbol();'>Reset Set Symbol</button>
+										  <button class='input btn backgroundbutton' onclick='resetSetSymbol();'>Reset Set Symbol</button>
 									  </div>
 								  </div>
 								  <div class='readable-background padding margin-bottom'>
 									  <h5 class='padding margin-bottom input-description'>Clears the Set Symbol, making it blank</h5>
-									  <button class='input margin-bottom' onclick='uploadSetSymbol(blank.src);'>Remove Set Symbol</button>
+									  <button class='input margin-bottom btn backgroundbutton' onclick='uploadSetSymbol(blank.src);'>Remove Set Symbol</button>
 								  </div>
 								  <div class='readable-background padding'>
 									  <h5 class='input-description margin-bottom'>Lock the set symbol code (saves between reloads)</h5>
@@ -882,12 +882,12 @@ Teferi, Hero of Dominaria
 										  <input id='watermark-zoom' type='number' class='input' oninput='watermarkEdited();' value=100 step=0.1 min=0>
 									  </div>
 									  <div class='input-grid'>
-										  <button class='input' onclick='resetWatermark();'>Reset Watermark</button>
+										  <button class='input btn backgroundbutton' onclick='resetWatermark();'>Reset Watermark</button>
 									  </div>
 								  </div>
 								  <div class='readable-background padding'>
 									  <h5 class='padding margin-bottom input-description'>Clears the watermark, making it blank</h5>
-									  <button class='input margin-bottom' onclick='uploadWatermark(blank.src);'>Remove Watermark</button>
+									  <button class='input margin-bottom btn backgroundbutton' onclick='uploadWatermark(blank.src);'>Remove Watermark</button>
 								  </div>
 							  </div>
 							  <div id='creator-menu-bottomInfo' class='hidden'>
@@ -904,17 +904,17 @@ Teferi, Hero of Dominaria
 								  <div class='readable-background padding margin-bottom'>
 									  <h5 class='input-description padding margin-bottom'>Toggle between star (seen on foils) and dot (seen on regular cards)</h5>
 									  <div class='padding'>
-										  <button class='input padding' onclick='toggleStarDot();'>Toggle Star/Dot</button>
+										  <button class='input padding btn backgroundbutton' onclick='toggleStarDot();'>Toggle Star/Dot</button>
 									  </div>
 								  </div>
 								  <div class='readable-background padding margin-bottom'>
 									  <h5 class='input-description padding margin-bottom'>Save current collector info as default</h5>
 									  <div class='padding'>
-										  <button class='input padding' onclick='setDefaultCollector();'>Save as Default</button>
+										  <button class='input padding btn backgroundbutton' onclick='setDefaultCollector();'>Save as Default</button>
 									  </div>
 									  <h5 class='input-description padding margin-bottom'>Clear your saved default collector info</h5>
 									  <div class='padding'>
-										  <button class='input padding' onclick='removeDefaultCollector();'>Clear Saved Defaults</button>
+										  <button class='input padding btn backgroundbutton' onclick='removeDefaultCollector();'>Clear Saved Defaults</button>
 									  </div>
 								  </div>
 							  </div>
@@ -942,19 +942,19 @@ Teferi, Hero of Dominaria
 								  </div>
 								  <div class='readable-background margin-bottom padding'>
 									  <h5 class='padding margin-bottom input-description'>Save your current card</h5>
-									  <button class='input margin-bottom' onclick='saveCard();'>Save Card</button>
+									  <button class='input margin-bottom btn backgroundbutton' onclick='saveCard();'>Save Card</button>
 									  <h5 class='padding margin-bottom input-description'>Load a saved card</h5>
 									  <select id='load-card-options' class='input margin-bottom' type='text' onchange='loadCard(this.value);'></select>
 									  <h5 class='padding margin-bottom input-description'>Delete selected card</h5>
-									  <button class='input' onclick='deleteCard();'>Delete Card</button>
+									  <button class='input btn backgroundbutton' onclick='deleteCard();'>Delete Card</button>
 								  </div>
 								  <div class='readable-background padding margin-bottom'>
 									  <h5 class='padding margin-bottom input-description'>Download all saved cards</h5>
-									  <button class='input margin-bottom' onclick='downloadSavedCards();'>Download All</button>
+									  <button class='input margin-bottom btn backgroundbutton' onclick='downloadSavedCards();'>Download All</button>
 									  <h5 class='padding margin-bottom input-description'>Upload previously downloaded file of saved cards (downloaded from above)</h5>
 									  <input type='file' accept='.cardconjurer,.txt' class='input margin-bottom' oninput='uploadSavedCards(event);'>
 									  <h5 class='padding margin-bottom input-description'>Delete ALL saved cards</h5>
-									  <button class='input margin-bottom' onclick='deleteSavedCards();'>Delete All</button>
+									  <button class='input margin-bottom btn backgroundbutton' onclick='deleteSavedCards();'>Delete All</button>
 								  </div>
 								  <div class='readable-background padding margin-bottom'>
 									  <h5 class='collapsible collapsed padding input-description' onclick='toggleCollapse(event);'>
