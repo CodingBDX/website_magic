@@ -277,6 +277,11 @@ main div {
   transition: all 0.3s;
   height:600px;
 }
+.loader {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
 
 .printheight{
   height:600px;
