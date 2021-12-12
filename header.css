@@ -429,9 +429,7 @@ height:100%;
 .frame-element-editor.opened, .textbox-editor.opened {
 	display: grid;
 }
-.frame-element-editor > .frame-element-editor-title, .textbox-editor > .textbox-editor-title {
-	grid-column: 1 / -2;
-}
+
 .frame-element-editor > .frame-element-editor-close, .textbox-editor > .textbox-editor-close {
 	cursor: pointer;
 	width: auto;
