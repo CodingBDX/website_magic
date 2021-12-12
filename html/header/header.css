@@ -720,6 +720,9 @@ main {
 }
 
 .backgroundbutton{background-color: #051C24;}
+.scrollable-element {
+  scrollbar-color: #051C24 #003C57;
+}
 
 .rb-0 {
   border-bottom-left-radius: 0;
