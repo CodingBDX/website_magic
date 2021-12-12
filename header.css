@@ -390,7 +390,7 @@ height:100%;
 	width: 4rem;
 	height: 4rem;
 	object-fit: contain;
-	padding: none;
+	
 }
 .frame-element:hover {
 	box-shadow: 0 0px 16px black;
