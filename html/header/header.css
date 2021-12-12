@@ -724,6 +724,7 @@ main {
 html {
   --scrollbarBG: #051C24;
   --thumbBG: #003C57;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
 body::-webkit-scrollbar {
   width: 11px;
