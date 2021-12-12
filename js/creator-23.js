@@ -8,7 +8,7 @@ if (debugging) {
 
 //To save the server from being overloaded? Maybe?
 function fixUri(input) {
-	var prefix = 'https://card-conjurer.storage.googleapis.com/';//'https://raw.githubusercontent.com/ImKyle4815/cardconjurer/remake';
+	var prefix = 'https://card-conjurer.storage.googleapis.com';//'https://raw.githubusercontent.com/ImKyle4815/cardconjurer/remake';
 	if (input.includes(prefix) || input.includes('http') || input.includes('data:image') || window.location.href.includes('localhost')) {
 		return input;
 	} else {
@@ -285,7 +285,7 @@ function loadManaSymbols(manaSymbolPaths, size = [1, 1]) {
 		manaSymbol.height = size[1];
 		manaSymbol.image = new Image();
 		manaSymbol.image.crossOrigin = 'anonymous';
-		var manaSymbolPath = 'img/manaSymbols/' + manaSymbol.path;
+		var manaSymbolPath = '/img/manaSymbols/' + manaSymbol.path;
 		if (!manaSymbolPath.includes('.png')) {
 			manaSymbolPath += '.svg';
 		}
