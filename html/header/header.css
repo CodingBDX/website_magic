@@ -594,6 +594,9 @@ main div {
 .z--1 {
   z-index: -1;
 }
+.z--999 {
+  z-index: 999;
+}
 
 .text-base {
   font-size: 1rem;
