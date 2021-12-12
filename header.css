@@ -204,7 +204,7 @@ height:100%;
 	display: grid;
 	grid-gap: 1rem;
 	grid-template-columns: 1fr;
-  height:15px;
+  
 }
 .sample-grid > img {
 	display: block;
@@ -303,7 +303,7 @@ height:100%;
 .frame-picker, .mask-picker {
 	display: grid;
 	grid-gap: 0.5rem;
-	height: 10rem;
+	height: 6rem;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	grid-auto-rows: 3.5rem;
