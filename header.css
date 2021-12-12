@@ -434,7 +434,7 @@ height:100%;
 	cursor: pointer;
 	width: auto;
 	height: auto;
-	grid-column: -1 span 1;
+	
 	user-select: none;
 	justify-self: right;
 }
