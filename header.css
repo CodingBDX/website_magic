@@ -317,7 +317,7 @@ height:100%;
 .frame-picker {
 	grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
 	justify-items: left;
-	align-items: left;
+
 }
 .mask-picker {
 	grid-template-columns: 1fr;
