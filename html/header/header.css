@@ -727,7 +727,7 @@ html {
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
 body::-webkit-scrollbar {
-  width: 11px;
+  width: 18px;
 }
 body {
   scrollbar-width: thin;
