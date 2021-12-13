@@ -15,7 +15,7 @@ function isValidLine(line)
 
 function clearLine(line)
 {
-    line = linne.replace(/[0-9]/gm, "")
+    line = linne.replace(/[0-9]/gm, "");
 	line = line.replace(/^\d+x/gm, ""); // Removes "2x"
 	line = line.replace(/\(.*\)/gm, "");  // Removes "(SET")"
 	line = line.replace(/\*\w+\*/gm, "");  // Removes "*F*"
@@ -199,7 +199,7 @@ function generateTokens()
 {
 	console.log("Generate called");
 	
-	var input = $(".inputtotkens").val();
+	var input = $("#input").val();
 	var output = [];
 	var lines = input.match(/[^\r\n]+/g);
 	var validLines = [];
