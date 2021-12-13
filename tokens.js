@@ -15,7 +15,6 @@ function isValidLine(line)
 
 function clearLine(line)
 {
-    line = linne.replace(/[0-9]/gm, "");
 	line = line.replace(/^\d+x/gm, ""); // Removes "2x"
 	line = line.replace(/\(.*\)/gm, "");  // Removes "(SET")"
 	line = line.replace(/\*\w+\*/gm, "");  // Removes "*F*"
@@ -187,7 +186,7 @@ function loadTransform(url, callback)
 
 function generate()
 {
-	$(".outputtokens").val("Loading...");
+	$("#output").val("Loading...");
 	
 	loadTokens(function()
 	{
@@ -206,7 +205,7 @@ function generateTokens()
 
     if(lines==null)
     {
-		$(".outputtokens").val("Card list is empty");
+		$("#output").val("Card list is empty");
  		return;	
 	}
 
@@ -235,10 +234,10 @@ function generateTokens()
 	
 	if(output.length==0)
 	{
-		$(".outputtokens").val("No tokens found for the specified card list");
+		$("#output").val("No tokens found for the specified card list");
 	}
 	else
 	{
-		$(".outputtokens").val(output.join("\n"));
+		$("#output").val(output.join("\n"));
 	}
 }
