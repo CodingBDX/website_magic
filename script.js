@@ -4,6 +4,38 @@ const cardPath = "name=";
 const tokenPath = "t:token%20name=";
 const emblemPath = "t:emblem%20name=";
 
+const minScale = 30;
+const maxScale = 300;
+const stepScale = 10;
+
+document.querySelector(".scale-component .minus").onclick = () => {
+  const current = parseInt(document.querySelector(".value").value);
+  const nextValue = current <= minScale ? minScale : current - stepScale;
+  document.querySelector(".scale-component .value").value = nextValue;
+  document.querySelector(".scale-component .value").dispatchEvent(new Event("change"));
+};
+
+document.querySelector(".scale-component .plus").onclick = () => {
+  const current = parseInt(document.querySelector(".value").value);
+  const nextValue = current >= maxScale ? maxScale : current + stepScale;
+  document.querySelector(".scale-component .value").value = nextValue;
+  document.querySelector(".scale-component .value").dispatchEvent(new Event("change"));
+};
+
+const isAllowed = (paste) =>
+  !isDigits(paste) || parseInt(paste) < minScale || parseInt(paste) > maxScale;
+
+document
+  .querySelector(".scale-component .value")
+  .addEventListener("paste", (event) => {
+    const paste = (event.clipboardData || window.clipboardData).getData("text");
+
+    if (isAllowed(paste)) {
+      event.preventDefault();
+      return;
+    }
+  });
+
 const getCardUrl = (cardName, set) =>
   `${baseUrl}${cardPath}${encodeURI(cardName)}${!!set ? `%20set:${set}` : ""}`;
 
@@ -20,12 +52,6 @@ function extracts(input, from, to) {
   const start = input.indexOf(from) + from.length;
   const distance = input.lastIndexOf(to) - start;
   return input.substr(start, distance);
-}
-
-function indexOfNaN(input) {
-  let i = 0;
-  for (; input[i] >= "0" && input[i] <= "9"; i++);
-  return i;
 }
 
 function cleanStars(input) {
@@ -135,9 +161,11 @@ function appendCards(sources, quantity, isCustom, configuration) {
         "relative",
         "justify-center",
         "align-center",
-        configuration.gutter,
-        configuration.size,
+        configuration.gutter
       );
+
+      div.style.width = scaleWidth(configuration.scale) + "mm";
+      div.style.height = scaleHeight(configuration.scale) + "mm";
 
       const loader = document.createElement("div");
       loader.classList.add("absolute", "z--1");
@@ -148,7 +176,9 @@ function appendCards(sources, quantity, isCustom, configuration) {
       const src = isCustom ? source.source : source.source;
       img.crossOrigin = "anonymous";
       img.setAttribute("src", src);
-      img.classList.add(configuration.gutter, configuration.size);
+      img.classList.add(configuration.gutter);
+      img.style.width = scaleWidth(configuration.scale) + "mm";
+      img.style.height = scaleHeight(configuration.scale) + "mm";
       img.dataset.src = src;
       img.dataset.custom = source.custom;
       if (!source.custom) {
@@ -167,7 +197,7 @@ function appendCards(sources, quantity, isCustom, configuration) {
         const button = document.createElement("button");
         button.textContent = source.set;
         button.setAttribute("type", "button");
-        button.classList.add("uppercase", "text-base", "btn", "backgroundbutton", "text-light", "absolute", "bottommagic");
+        button.classList.add("absolute", "b-2", "uppercase", "text-base", "btn", "backgroundbutton", "text-light");
         button.onclick = switchPrint;
         div.appendChild(button);
       }
@@ -318,23 +348,16 @@ const buildPdf = (
   return doc;
 };
 
-function getCardSize(sizeClass) {
-  const scale = sizeClass === "normalSize" ? 100 : (sizeClass === "smallSize" ? 90 : 80);
-  return {
-    width: 63 * scale / 100,
-    height: 88 * scale / 100,
-    name: scale != 100 ? `"Std Card USA Game scaled at {scale}%` : "Std Card USA Game",
-  }
-}
-
 function print() {
   const imgs = document.querySelectorAll(".deck > div:not(.hidden) > img");
   const sheet =
     sheetFormat[document.querySelector(".sheet").value.toLowerCase()];
   const deckSize = imgs.length;
 
-  const sizeClass = [...imgs[0].classList].filter((x) => x.includes("Size"))[0];
-  const card = getCardSize(sizeClass);
+  const scale = parseInt(
+    document.querySelector(".scale-component .value").value
+  );
+  const card = getCardSize(scale);
   const columns = getColumns(sheet.width, card.width);
   const rows = getRows(sheet.height, card.height);
   const gutterClass = [...imgs[0].classList].filter((x) =>
@@ -395,8 +418,8 @@ function renderDeck() {
   clean();
   cleanErrorList();
   let configuration = {
-    size: document.querySelector(".size").value,
-    gutter: document.querySelector(".gutter").value
+    scale: parseInt(document.querySelector(".scale-component .value").value),
+    gutter: document.querySelector(".gutter").value,
   };
   if (!!cards) fill(cards, CardType.Classic, configuration);
   if (!!tokens) fill(tokens, CardType.Token, configuration);
@@ -412,8 +435,19 @@ document.querySelector(".print").onclick = function () {
 document.querySelector(".display").onclick = renderDeck;
 
 function getLoaderHtml(width, height) {
-  return `<div class="spinner-border text-secondary">
- 
+  return `<div class="loader">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="${width}px" height="${height}px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+  <path fill="#fff" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+    <animateTransform attributeType="xml"
+      attributeName="transform"
+      type="rotate"
+      from="0 25 25"
+      to="360 25 25"
+      dur="0.6s"
+      repeatCount="indefinite"/>
+    </path>
+  </svg>
   </div>`;
 }
 
@@ -466,9 +500,8 @@ function switchPrint(e) {
           );
           e.target.removeAttribute("disabled");
         };
-        img.src = (img.dataset.face
-          ? next.card_faces[+img.dataset.face]
-          : next
+        img.src = (
+          img.dataset.face ? next.card_faces[+img.dataset.face] : next
         ).image_uris.large;
       })
       .catch((e) => console.error(`Booo:\n ${e}`));
@@ -501,17 +534,20 @@ document.querySelector(".gutter").onchange = function (e) {
   e.target.dataset.gutter = e.target.value;
 };
 
-document.querySelector(".size").onchange = function (e) {
+document.querySelector(".scale-component .value").onchange = function (e) {
   let imgs = document.querySelectorAll(".deck > div > img");
   if (imgs.length == 0) return;
-  const previous = e.target.dataset.size ?? "normalSize";
+  // const previous = e.target.dataset.scale ?? "100";
+  const scale = parseInt(e.target.value);
+  const newWidth = scaleWidth(scale);
+  const newHeight = scaleHeight(scale);
   imgs.forEach((img) => {
-    img.classList.remove(previous);
-    img.classList.add(e.target.value);
-    img.parentElement.classList.remove(previous);
-    img.parentElement.classList.add(e.target.value);
+    img.style.width = newWidth + "mm";
+    img.style.height = newHeight + "mm";
+    img.parentElement.style.width = newWidth + "mm";
+    img.parentElement.style.height = newHeight + "mm";
   });
-  e.target.dataset.size = e.target.value;
+  // e.target.dataset.scale = e.target.value;
 };
 
 document.querySelector(".skipBasicLands").onchange = function (e) {
