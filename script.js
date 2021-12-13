@@ -4,8 +4,6 @@ const cardPath = "name=";
 const tokenPath = "t:token%20name=";
 const emblemPath = "t:emblem%20name=";
 
-
-
 const getCardUrl = (cardName, set) =>
   `${baseUrl}${cardPath}${encodeURI(cardName)}${!!set ? `%20set:${set}` : ""}`;
 
@@ -22,6 +20,12 @@ function extracts(input, from, to) {
   const start = input.indexOf(from) + from.length;
   const distance = input.lastIndexOf(to) - start;
   return input.substr(start, distance);
+}
+
+function indexOfNaN(input) {
+  let i = 0;
+  for (; input[i] >= "0" && input[i] <= "9"; i++);
+  return i;
 }
 
 function cleanStars(input) {
@@ -131,11 +135,9 @@ function appendCards(sources, quantity, isCustom, configuration) {
         "relative",
         "justify-center",
         "align-center",
-        configuration.gutter
+        configuration.gutter,
+        configuration.size,
       );
-
-      div.style.width = scaleWidth(configuration.scale) + "mm";
-      div.style.height = scaleHeight(configuration.scale) + "mm";
 
       const loader = document.createElement("div");
       loader.classList.add("absolute", "z--1");
@@ -146,9 +148,7 @@ function appendCards(sources, quantity, isCustom, configuration) {
       const src = isCustom ? source.source : source.source;
       img.crossOrigin = "anonymous";
       img.setAttribute("src", src);
-      img.classList.add(configuration.gutter);
-      img.style.width = scaleWidth(configuration.scale) + "mm";
-      img.style.height = scaleHeight(configuration.scale) + "mm";
+      img.classList.add(configuration.gutter, configuration.size);
       img.dataset.src = src;
       img.dataset.custom = source.custom;
       if (!source.custom) {
@@ -318,16 +318,23 @@ const buildPdf = (
   return doc;
 };
 
+function getCardSize(sizeClass) {
+  const scale = sizeClass === "normalSize" ? 100 : (sizeClass === "smallSize" ? 90 : 80);
+  return {
+    width: 63 * scale / 100,
+    height: 88 * scale / 100,
+    name: scale != 100 ? `"Std Card USA Game scaled at {scale}%` : "Std Card USA Game",
+  }
+}
+
 function print() {
   const imgs = document.querySelectorAll(".deck > div:not(.hidden) > img");
   const sheet =
     sheetFormat[document.querySelector(".sheet").value.toLowerCase()];
   const deckSize = imgs.length;
 
-  const scale = parseInt(
-    document.querySelector(".scale-component .value").value
-  );
-  const card = getCardSize(scale);
+  const sizeClass = [...imgs[0].classList].filter((x) => x.includes("Size"))[0];
+  const card = getCardSize(sizeClass);
   const columns = getColumns(sheet.width, card.width);
   const rows = getRows(sheet.height, card.height);
   const gutterClass = [...imgs[0].classList].filter((x) =>
@@ -388,8 +395,8 @@ function renderDeck() {
   clean();
   cleanErrorList();
   let configuration = {
-    scale: parseInt(document.querySelector(".scale-component .value").value),
-    gutter: document.querySelector(".gutter").value,
+    size: document.querySelector(".size").value,
+    gutter: document.querySelector(".gutter").value
   };
   if (!!cards) fill(cards, CardType.Classic, configuration);
   if (!!tokens) fill(tokens, CardType.Token, configuration);
@@ -470,8 +477,9 @@ function switchPrint(e) {
           );
           e.target.removeAttribute("disabled");
         };
-        img.src = (
-          img.dataset.face ? next.card_faces[+img.dataset.face] : next
+        img.src = (img.dataset.face
+          ? next.card_faces[+img.dataset.face]
+          : next
         ).image_uris.large;
       })
       .catch((e) => console.error(`Booo:\n ${e}`));
@@ -504,20 +512,17 @@ document.querySelector(".gutter").onchange = function (e) {
   e.target.dataset.gutter = e.target.value;
 };
 
-document.querySelector(".scale-component .value").onchange = function (e) {
+document.querySelector(".size").onchange = function (e) {
   let imgs = document.querySelectorAll(".deck > div > img");
   if (imgs.length == 0) return;
-  // const previous = e.target.dataset.scale ?? "100";
-  const scale = parseInt(e.target.value);
-  const newWidth = scaleWidth(scale);
-  const newHeight = scaleHeight(scale);
+  const previous = e.target.dataset.size ?? "normalSize";
   imgs.forEach((img) => {
-    img.style.width = newWidth + "mm";
-    img.style.height = newHeight + "mm";
-    img.parentElement.style.width = newWidth + "mm";
-    img.parentElement.style.height = newHeight + "mm";
+    img.classList.remove(previous);
+    img.classList.add(e.target.value);
+    img.parentElement.classList.remove(previous);
+    img.parentElement.classList.add(e.target.value);
   });
-  // e.target.dataset.scale = e.target.value;
+  e.target.dataset.size = e.target.value;
 };
 
 document.querySelector(".skipBasicLands").onchange = function (e) {
