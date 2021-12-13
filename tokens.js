@@ -15,7 +15,7 @@ function isValidLine(line)
 
 function clearLine(line)
 {
-    line = line.replace(/[0-9]/gm, "");
+    
 	line = line.replace(/^\d+x/gm, ""); // Removes "2x"
 	line = line.replace(/\(.*\)/gm, "");  // Removes "(SET")"
 	line = line.replace(/\*\w+\*/gm, "");  // Removes "*F*"
