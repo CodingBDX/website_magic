@@ -4,37 +4,7 @@ const cardPath = "name=";
 const tokenPath = "t:token%20name=";
 const emblemPath = "t:emblem%20name=";
 
-const minScale = 30;
-const maxScale = 300;
-const stepScale = 10;
 
-document.querySelector(".scale-component .minus").onclick = () => {
-  const current = parseInt(document.querySelector(".value").value);
-  const nextValue = current <= minScale ? minScale : current - stepScale;
-  document.querySelector(".scale-component .value").value = nextValue;
-  document.querySelector(".scale-component .value").dispatchEvent(new Event("change"));
-};
-
-document.querySelector(".scale-component .plus").onclick = () => {
-  const current = parseInt(document.querySelector(".value").value);
-  const nextValue = current >= maxScale ? maxScale : current + stepScale;
-  document.querySelector(".scale-component .value").value = nextValue;
-  document.querySelector(".scale-component .value").dispatchEvent(new Event("change"));
-};
-
-const isAllowed = (paste) =>
-  !isDigits(paste) || parseInt(paste) < minScale || parseInt(paste) > maxScale;
-
-document
-  .querySelector(".scale-component .value")
-  .addEventListener("paste", (event) => {
-    const paste = (event.clipboardData || window.clipboardData).getData("text");
-
-    if (isAllowed(paste)) {
-      event.preventDefault();
-      return;
-    }
-  });
 
 const getCardUrl = (cardName, set) =>
   `${baseUrl}${cardPath}${encodeURI(cardName)}${!!set ? `%20set:${set}` : ""}`;
