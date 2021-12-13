@@ -251,11 +251,24 @@ Teferi, Hero of Dominaria
 									  <button class="print btn backgroundbutton text-light"  id="generate" type="button" value="Generate">generate token's</button>
 								
 								  </div>
-								  <select class="mb-2 size form-control form-control-lg">
-									<option value="normalSize">Normal card size</option>
-									<option value="smallSize">Small card size</option>
-									<option value="tinySize">Tiny card size</option>
-								  </select>
+								  <div class="my-2">
+									<div class="grid gap grid-auto-auto-auto scale-component">
+									  <!-- <label class="self-end ml-4">Scale</label> -->
+									  <button type="button" class="minus text-bold">-</button>
+									  <input
+										class="value text-center number m-0"
+										onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"
+										type="number"
+										step="1"
+										value="100"
+										min="30"
+										max="300"
+										placeholder="100"
+									  />
+									  <button type="button" class="plus text-bold">+</button>
+									</div>
+								  </div>
+								 
 								  <select class="mb-2 gutter form-control form-control-lg">
 									<option value="noGutter">No gutter</option>
 									<option value="tinyGutter">Tiny gutter</option>
