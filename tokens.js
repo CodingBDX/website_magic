@@ -186,7 +186,7 @@ function loadTransform(url, callback)
 
 function generate()
 {
-	$("#output").val("Loading...");
+	$(".outputtokens").val("Loading...");
 	
 	loadTokens(function()
 	{
@@ -198,14 +198,14 @@ function generateTokens()
 {
 	console.log("Generate called");
 	
-	var input = $("#input").val();
+	var input = $(".inputtokens").val();
 	var output = [];
 	var lines = input.match(/[^\r\n]+/g);
 	var validLines = [];
 
     if(lines==null)
     {
-		$("#output").val("Card list is empty");
+		$(".outputtokens").val("Card list is empty");
  		return;	
 	}
 
@@ -234,10 +234,10 @@ function generateTokens()
 	
 	if(output.length==0)
 	{
-		$("#output").val("No tokens found for the specified card list");
+		$(".outputtokens").val("No tokens found for the specified card list");
 	}
 	else
 	{
-		$("#output").val(output.join("\n"));
+		$("outputtokens").val(output.join("\n"));
 	}
 }
