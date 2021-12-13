@@ -35,6 +35,14 @@ variableWidth: true,
 adaptiveHeight: true,
   });
 
+ 
+	console.log("Initialize called");
+	$("#generate").click(function()
+	{
+		generate();
+	});
+
+
   
   
 
