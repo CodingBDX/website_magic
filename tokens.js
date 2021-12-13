@@ -201,7 +201,7 @@ function generateTokens()
 	
 	var input = $(".inputtotkens").val();
 	var output = [];
-	var lines = input.match(/[^\r\n]+/g);
+	var lines = inputtokens.match(/[^\r\n]+/g);
 	var validLines = [];
 
     if(lines==null)
