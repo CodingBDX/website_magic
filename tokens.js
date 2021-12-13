@@ -235,10 +235,10 @@ function generateTokens()
 	
 	if(output.length==0)
 	{
-		$("#outputtokens").val("No tokens found for the specified card list");
+		$(".outputtokens").val("No tokens found for the specified card list");
 	}
 	else
 	{
-		$("#outputtokens").val(output.join("\n"));
+		$(".outputtokens").val(output.join("\n"));
 	}
 }
