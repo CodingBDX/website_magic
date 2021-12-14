@@ -290,7 +290,7 @@ const buildPdf = (
     const x = marginLeft + position.x;
     const y = marginTop + position.y;
 
-    doc.addImage(base64Images[i], "PNG", x, y, cardWidth, cardHeight, 'FAST');
+    doc.addImage(base64Images[i], "JPEG", x, y, cardWidth, cardHeight, 'FAST');
 
     if (position.isLast && i < cardPositions.length - 1) {
       doc.addPage();
@@ -382,9 +382,9 @@ function getBase64Image(img, width, height) {
     parseInt(img.width) * biggerFactor,
     parseInt(img.height) * biggerFactor
   );
-  var dataURL = canvas.toDataURL("image/png");
+  var dataURL = canvas.toDataURL("image/jpg");
   img.className = classes;
-  return dataURL.replace(/^data:image\/png;base64,/, "");
+  return dataURL.replace(/^data:image\/jpg;base64,/, "");
 }
 
 function renderDeck() {
