@@ -290,7 +290,7 @@ const buildPdf = (
     const x = marginLeft + position.x;
     const y = marginTop + position.y;
 
-    doc.addImage(base64Images[i], "JPEG", x, y, cardWidth, cardHeight, undefined, 'FAST');
+    doc.addImage(base64Images[i], "JPEG", x, y, cardWidth, cardHeight, NaN, "FAST");
 
     if (position.isLast && i < cardPositions.length - 1) {
       doc.addPage();
