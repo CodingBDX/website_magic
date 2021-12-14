@@ -167,7 +167,7 @@ function appendCards(sources, quantity, isCustom, configuration) {
         const button = document.createElement("button");
         button.textContent = source.set;
         button.setAttribute("type", "button");
-        button.classList.add("absolute", "b-2", "uppercase", "text-base");
+        button.classList.add("absolute", "b-2", "uppercase", "text-base", "btn", "backgroundbutton", "text-light");
         button.onclick = switchPrint;
         div.appendChild(button);
       }
