@@ -326,10 +326,7 @@ Teferi, Hero of Dominaria
 						 </button>
 						 <button class=" align-items-center print btn backgroundbutton text-light btn-active-light-warning btg-lg ms-2"> Put in text deck
 						 </button>
-						 <label class='checkbox-container input'>Auto load
-							<input id='autoLoadFrameVersion' type='checkbox' onchange='autoLoadFrameVersion();' checked>
-							<span class='checkmark'></span>
-						</label>
+						 
 				</div>
 				<div class="container-fluid align-items-center">
 				<canvas class=' shadow justify-content-center margincard mt-6 flex flex-wrap align-content-start carte' width="1500px" height="2100px" id='previewCanvas'></canvas>
@@ -466,6 +463,11 @@ Teferi, Hero of Dominaria
 										  <button id='addToRightHalf' class='input mt-2 align-items-center print btn backgroundbutton text-light btn-active-light-warning btg-lg' onclick='addFrame([{src:"/img/frames/maskRightHalf.png", name:"Right Half"}])'>Add Frame to Card (Right Half)</button>
 									  </div>
 									  <h5 class='collapsible collapsed padding input-description' onclick='toggleCollapse(event);'>More options</h5>
+									  <div class='readable-background padding margin-bottom'>
+										<h5 class='margin-bottom padding input-description'>Drag to reorder frame images</h5>
+										<div id='frame-list' class='frame-list margin-bottom'></div>
+										<h5 class='padding input-description'>You may also click to edit opacity, position, size, and more</h5>
+									</div>
 										  <div>
 											  <div class='input-grid margin-bottom'>
 												  <button id='addToLeftHalf' class='input align-items-center print btn backgroundbutton text-light btn-active-light-warning btg-lg' onclick='addFrame([{src:"/img/frames/maskLeftHalf.png", name:"Left Half"}])'>Add Frame to Card (Left Half)</button>
